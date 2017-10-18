@@ -1,0 +1,17 @@
+{
+  "name": "wrike-api",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "client-oauth2": "^4.1.0",
+    "express": "^2.5.11",
+    "jade": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-http-bearer": "^1.0.1",
+    "passport-oauth2": "^1.4.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "nodemon": "~1.11.0"
+  }
+}
