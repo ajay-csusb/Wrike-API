@@ -1,7 +1,7 @@
 var express = require('express')
-  ,request = require('request')
-  ,token = 'WF3CJdNr9VJjz6t69tHsxUlJpcGMGaBezlukvEX0fEJ5UnVroZm6EfL5WKi0LirE-N-WFIUK'
-  ,hostname = 'http://www.wrike.com/api/v3/';
+,request = require('request')
+,token = 'WF3CJdNr9VJjz6t69tHsxUlJpcGMGaBezlukvEX0fEJ5UnVroZm6EfL5WKi0LirE-N-WFIUK'
+,hostname = 'http://www.wrike.com/api/v3/';
 
 home = function(req, res) {
   console.log('Homepage');
@@ -22,12 +22,12 @@ getTasks = function(req, res, error) {
 
 function parseTasks(data) {
   var jsonData = null
-  ,jsonId
-  ,jsonTitle
-  ,jsonStatus
-  ,jsonPermaLink
-  ,jsonCompletedDate
-  ,jsonResult = new Array();
+    ,jsonId
+    ,jsonTitle
+    ,jsonStatus
+    ,jsonPermaLink
+    ,jsonCompletedDate
+    ,jsonResult = new Array();
 
   try {
     jsonData = JSON.parse(data);
@@ -36,14 +36,14 @@ function parseTasks(data) {
   }
 
   if (jsonData && jsonData.data){
-  jsonData.data.forEach(function(value){
-    jsonId = (value.id !== undefined) ? value.id: '';
-    jsonTitle = (value.title !== undefined) ? value.title: '';
-    jsonStatus = (value.status !== undefined) ? value.status: '';
-    jsonPermaLink = (value.permalink !== undefined) ? value.permalink: '';
-    jsonCompletedDate = (value.completedDate !== undefined) ? value.completedDate : "";
-    jsonResult.push({id: jsonId, title: jsonTitle, status: jsonStatus, permalink: jsonPermaLink, completedDate: jsonCompletedDate});
-  });
+    jsonData.data.forEach(function(value){
+      jsonId = (value.id !== undefined) ? value.id: '';
+      jsonTitle = (value.title !== undefined) ? value.title: '';
+      jsonStatus = (value.status !== undefined) ? value.status: '';
+      jsonPermaLink = (value.permalink !== undefined) ? value.permalink: '';
+      jsonCompletedDate = (value.completedDate !== undefined) ? value.completedDate : "";
+      jsonResult.push({id: jsonId, title: jsonTitle, status: jsonStatus, permalink: jsonPermaLink, completedDate: jsonCompletedDate});
+    });
   }
   return jsonResult;
 }
