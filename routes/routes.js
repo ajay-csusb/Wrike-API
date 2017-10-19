@@ -1,8 +1,11 @@
+var express = require('express')
+,request = require('request')
+,router = express.Router();
 
-/*
- * GET home page.
- */
+// Define controllers
+indexController = require('../controllers/indexController');
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' })
-};
+router.get('/', indexController.home);
+router.get('/get/wrike/tasks', indexController.getTasks);
+
+module.exports = router;

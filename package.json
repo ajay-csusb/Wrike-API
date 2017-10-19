@@ -4,14 +4,19 @@
   "private": true,
   "dependencies": {
     "client-oauth2": "^4.1.0",
-    "express": "^2.5.11",
+    "express": "^4.13.4",
     "jade": "^1.11.0",
     "passport": "^0.3.2",
     "passport-http-bearer": "^1.0.1",
     "passport-oauth2": "^1.4.0",
-    "request": "^2.81.0"
+    "request": "^2.83.0"
   },
   "devDependencies": {
-    "nodemon": "~1.11.0"
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
