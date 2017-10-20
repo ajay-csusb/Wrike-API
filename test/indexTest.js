@@ -1,7 +1,10 @@
 var request = require('supertest');
+var req = require('request')
 var app = require('../app');
 var assert = require('assert');
 var index = require('../controllers/indexController');
+var nock = require('nock');
+var superagent = require('superagent');
 
 describe('Wrike API Tests.', function() {
   //this.timeout(15000);
@@ -16,6 +19,25 @@ describe('Wrike API Tests.', function() {
     .get('/get/wrike/tasks')
     .expect('Content-Type', /json/)
     .expect(200, done);
+  });
+
+  it('Test wrike api responds with auth error', function(done) {
+    // Mock URL to simulate authorization error.
+    var scope = nock(index.hostname, {
+      reqheaders: {
+        "authorization": "Bearer " + index.token
+      }
+    })
+    .get('/tasks')
+    .replyWithError({'message': 'Authorization error', 'code': '900'});
+
+    request(app)
+    .get('/get/wrike/tasks')
+    .expect(500)
+    .end(function(err, res) {
+      if (err) throw done(err);
+      done();
+    });
   });
 
   it('Test parseTasks()', function() {
@@ -122,6 +144,16 @@ describe('Wrike API Tests.', function() {
     var data_no_link_date = {"data" : [{"id":"IEAGIITRKQAYHYM4","title":"Test task","status":"Active"}]};
     result = index.parseTasks(data_no_link_date);
     expected = [{ "id":"IEAGIITRKQAYHYM4","title":"Test task","status":"Active","permalink":"","completedDate":"" }];
+    assert.deepEqual(result, expected);
+
+    var empty_data = [];
+    result = index.parseTasks(empty_data);
+    expected = [];
+    assert.deepEqual(result, expected);
+
+    var empty_data_1 = {"data": []};
+    result = index.parseTasks(empty_data_1);
+    expected = [];
     assert.deepEqual(result, expected);
   });
 });
