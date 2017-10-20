@@ -1,10 +1,9 @@
 var express = require('express')
 ,request = require('request')
 ,token = 'WF3CJdNr9VJjz6t69tHsxUlJpcGMGaBezlukvEX0fEJ5UnVroZm6EfL5WKi0LirE-N-WFIUK'
-,hostname = 'http://www.wrike.com/api/v3/';
+,hostname = 'http://www.wrike.com/api/v3';
 
 home = function(req, res) {
-  console.log('Homepage');
   res.send('HTTP code 200');
 };
 
@@ -14,8 +13,12 @@ getTasks = function(req, res, error) {
       'bearer': token
     }
   },function (error, response, body) {
-    if (error) { return console.log('Error encountered during API response:', error);}
+    if (error) {
+     res.sendStatus(500);
+     return console.log(new Date() + ' => Error encountered during API response:', error);
+    }
     var jsonResult = parseTasks(body);
+    res.type('json');
     res.json(jsonResult);
   });
 };
@@ -51,5 +54,7 @@ function parseTasks(data) {
 module.exports = {
   home: home,
   getTasks: getTasks,
-  parseTasks: parseTasks
+  parseTasks: parseTasks,
+  hostname: hostname,
+  token: token
 };
