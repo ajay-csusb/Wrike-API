@@ -1,0 +1,265 @@
+{
+  "kind": "customfields",
+  "data": [
+    {
+      "id": "IEAAVFCRJUAADIXA",
+      "accountId": "IEAAVFCR",
+      "title": "Include in ALL ITS Projects",
+      "type": "Checkbox",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Projects"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAADNPU",
+      "accountId": "IEAAVFCR",
+      "title": "Project Summary",
+      "type": "Text",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Folders"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAADNP4",
+      "accountId": "IEAAVFCR",
+      "title": "ITS Strategic Plan Alignment",
+      "type": "DropDown",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All",
+        "values": [
+          "Goal 1 - E-Learning",
+          "Goal 2 - iCoyote",
+          "Goal 3 - University Analytics",
+          "Goal 4 - Stable & Secure Infrastructure",
+          "Goal 5  - iEngage"
+        ],
+        "allowOtherValues": false
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAADTAK",
+      "accountId": "IEAAVFCR",
+      "title": "Project URL",
+      "type": "Text",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Projects"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAAFG2D",
+      "accountId": "IEAAVFCR",
+      "title": "Include on Website",
+      "type": "Checkbox",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Projects"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAAF7SG",
+      "accountId": "IEAAVFCR",
+      "title": "Executive Sponsor",
+      "type": "Text",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Folders"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAAHHWY",
+      "accountId": "IEAAVFCR",
+      "title": "Strategic Plan Year",
+      "type": "DropDown",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All",
+        "values": [
+          "Year 1",
+          "Year 2",
+          "Year 3",
+          "Year 4",
+          "Year 5"
+        ],
+        "allowOtherValues": false
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAAAYDL",
+      "accountId": "IEAAVFCR",
+      "title": "% Complete",
+      "type": "Percentage",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All",
+        "decimalPlaces": 0,
+        "aggregation": "Sum"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAAAYDM",
+      "accountId": "IEAAVFCR",
+      "title": "Revised Due Date",
+      "type": "Date",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAABXYB",
+      "accountId": "IEAAVFCR",
+      "title": "Measurable Objective #1",
+      "type": "Text",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All",
+        "aggregation": "Sum"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACDNZ",
+      "accountId": "IEAAVFCR",
+      "title": "Funds Allocated",
+      "type": "Text",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACDN2",
+      "accountId": "IEAAVFCR",
+      "title": "Responsibility",
+      "type": "Text",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACEBT",
+      "accountId": "IEAAVFCR",
+      "title": "Project MPP",
+      "type": "Contacts",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Folders"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACEBV",
+      "accountId": "IEAAVFCR",
+      "title": "CSUSB Strategic Alignment",
+      "type": "DropDown",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Folders",
+        "values": [
+          "Student Success",
+          "Faculty & Staff Success",
+          "Resource Sustainability & Expansion",
+          "Community Engagement and Partnerships",
+          "Identity"
+        ],
+        "allowOtherValues": false
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACEBX",
+      "accountId": "IEAAVFCR",
+      "title": "Notes",
+      "type": "Text",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACJUQ",
+      "accountId": "IEAAVFCR",
+      "title": "CSU Alignment",
+      "type": "DropDown",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Folders",
+        "values": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "allowOtherValues": false
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACSE4",
+      "accountId": "IEAAVFCR",
+      "title": "IT Governance",
+      "type": "Checkbox",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Projects"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACXFQ",
+      "accountId": "IEAAVFCR",
+      "title": "ATI Campus Report",
+      "type": "Checkbox",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACXFS",
+      "accountId": "IEAAVFCR",
+      "title": "ATI Report",
+      "type": "Numeric",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All",
+        "decimalPlaces": 2,
+        "useThousandsSeparator": false,
+        "aggregation": "Sum"
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAACZZF",
+      "accountId": "IEAAVFCR",
+      "title": "Category",
+      "type": "DropDown",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "Projects",
+        "values": [
+          "Campus Wide Projects",
+          "PeopleSoft Projects",
+          "Enterprise ITS Projects",
+          "Network Infrastructure",
+          "In Planning",
+          "Web Project"
+        ],
+        "allowOtherValues": false
+      }
+    },
+    {
+      "id": "IEAAVFCRJUAAC4KN",
+      "accountId": "IEAAVFCR",
+      "title": "Percent complete",
+      "type": "Percentage",
+      "sharedIds": [],
+      "settings": {
+        "inheritanceType": "All",
+        "decimalPlaces": 2,
+        "aggregation": "Sum"
+      }
+    }
+  ]
+}
