@@ -6,6 +6,6 @@ var express = require('express')
 indexController = require('../controllers/indexController');
 
 router.get('/', indexController.home);
-router.get('/get/wrike/tasks', indexController.getTasks);
+router.get('/get/wrike/projects', indexController.getProjects);
 
 module.exports = router;

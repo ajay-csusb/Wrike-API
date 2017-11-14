@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 
 // Routes
 app.use('/', routes);
-app.use('/get/wrike/tasks', routes);
+app.use('/get/wrike/projects', routes);
 
 if(!module.parent) {
   app.listen(5000, function () {
