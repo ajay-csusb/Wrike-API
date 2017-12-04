@@ -9,6 +9,8 @@
     "jade": "^1.11.0",
     "json-parse-better-errors": "^1.0.1",
     "mime": "^2.0.3",
+    "mock-req": "^0.2.0",
+    "mock-res": "^0.5.0",
     "parse-json": "^4.0.0",
     "passport": "^0.3.2",
     "passport-http-bearer": "^1.0.1",
@@ -24,6 +26,7 @@
     "nodemon": "^1.12.1",
     "nyc": "^11.3.0",
     "sinon": "^4.1.1",
+    "standard": "^10.0.3",
     "superagent": "^3.7.0",
     "supertest": "^3.0.0"
   },
