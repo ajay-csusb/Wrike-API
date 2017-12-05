@@ -195,10 +195,13 @@ function parseProjects (data, res) {
     jsonStatus,
     jsonPermaLink,
     jsonCompletedDate,
+   jsonProject = {},
     customFields,
     customFieldsCurrent = {},
     customFieldsWrapper = new Array(),
-    jsonResult = new Array()
+    jsonResult = new Array();
+    jsonProject.ownerNames = {};
+    jsonProject.authorName = {};
 
   jsonData = getJson(data)
 
@@ -209,6 +212,10 @@ function parseProjects (data, res) {
       jsonStatus = (value.status !== undefined) ? value.status : ''
       jsonPermaLink = (value.permalink !== undefined) ? value.permalink : ''
       jsonCompletedDate = (value.completedDate !== undefined) ? value.completedDate : ''
+      jsonProject = (value.project !== undefined) ? value.project : ''
+      // Set a field "ownerNames".
+      jsonProject.ownerNames = setUserNameCorrespondingToUserId(jsonProject);
+      jsonProject.authorName = setAuthorNameCorrespondingToAuthorId(jsonProject);
       // Replace 'customField' 'id' with value from 'fields' variable.
       // This value is fields.title
       if (typeof value !== 'undefined' && typeof value.customFields !== 'undefined' && value.customFields.length != 0) {
@@ -219,12 +226,37 @@ function parseProjects (data, res) {
           // customFieldsCurrent[fields[fieldValue.id]] = fieldValue.value
         })
       }
-      jsonResult.push({id: jsonId, customFields: customFieldsCurrent, title: jsonTitle, status: jsonStatus, permalink: jsonPermaLink, completedDate: jsonCompletedDate})
+      jsonResult.push({id: jsonId, customFields: customFieldsCurrent, project: jsonProject, title: jsonTitle, status: jsonStatus, permalink: jsonPermaLink, completedDate: jsonCompletedDate})
     })
   }
   return jsonResult
 }
 
+// Get user name from "ownerId".
+function setUserNameCorrespondingToUserId(projectData) {
+  var userName = [];
+  if (typeof projectData.ownerIds !== 'undefined') {
+    projectData.ownerIds.forEach(function(value) {
+      if (users[value] !== undefined) {
+        userName.push(users[value])
+      }
+    });
+  }
+  return userName
+}
+
+// Get author name from "authorId".
+function setAuthorNameCorrespondingToAuthorId(projectData) {
+  var authorName = [];
+  if (typeof projectData.authorId !== 'undefined') {
+    if (users[projectData.authorId] !== undefined) {
+      authorName.push(users[projectData.authorId])
+    }
+  }
+  return authorName
+}
+
+// Get value for field "ProjectMPP" and other fields.
 function setCustomFieldsKeyValue (fieldKey, fieldValue) {
   var result = {}
   if (fields[fieldKey] == 'ProjectMPP') {
@@ -237,6 +269,7 @@ function setCustomFieldsKeyValue (fieldKey, fieldValue) {
   return result
 }
 
+// Validate JSON format. Return a JSON object. If JSON format is not valid throw error.
 function getJson (json) {
   var result = json
   try {
@@ -284,6 +317,8 @@ module.exports = {
   getFolders: getFolders,
   splitProjectIdsIntoHundredItemsPerArrayElement: splitProjectIdsIntoHundredItemsPerArrayElement,
   setCustomFieldsKeyValue: setCustomFieldsKeyValue,
+  setUserNameCorrespondingToUserId: setUserNameCorrespondingToUserId,
+  setAuthorNameCorrespondingToAuthorId: setAuthorNameCorrespondingToAuthorId,
   fields: fields,
   hostname: hostname,
   token: token

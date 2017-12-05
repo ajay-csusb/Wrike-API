@@ -252,4 +252,100 @@ describe('Wrike API Tests.', function () {
     assert.equal(result.key, 'Percentcomplete')
     assert.equal(result.value, 'baz')
   })
+
+
+  it.only('Test setUserNameCorrespondingToUserId function', function () {
+    index.getUsersKeyValue(contactsJson)
+    // Single user id.
+    var projectData = { authorId: 'KUABMKIC',
+      ownerIds: [ 'KUABNOLM' ],
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    var result = index.setUserNameCorrespondingToUserId(projectData);
+    assert.equal(result, "Jim Olinger");
+
+    // Multiple user id.
+    projectData = { authorId: 'KUABMKIC',
+      ownerIds: ['KUABNOLM', 'KUAB3MAU', 'KX76FPT4'],
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    result = index.setUserNameCorrespondingToUserId(projectData);
+    assert.deepEqual(result, ["Jim Olinger", "William Yates", "Web Development "]);
+
+    // Empty user id.
+    projectData = { authorId: 'KUABMKIC',
+      ownerIds: [],
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    result = index.setUserNameCorrespondingToUserId(projectData);
+    assert.deepEqual(result, []);
+
+    // Invalid user id.
+    projectData = { authorId: 'KUABMKIC',
+      ownerIds: ["foo"],
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    result = index.setUserNameCorrespondingToUserId(projectData);
+    assert.deepEqual(result, []);
+
+    // undefined user id.
+    projectData = { authorId: 'KUABMKIC',
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    result = index.setUserNameCorrespondingToUserId(projectData);
+    assert.deepEqual(result, []);
+  })
+
+  it.only('Test setAuthorNameCorrespondingToAuthorId function', function () {
+    index.getUsersKeyValue(contactsJson)
+    // Single author id.
+    var projectData = { authorId: 'KUABMKIC',
+      ownerIds: [ 'KUABNOLM' ],
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    var result = index.setAuthorNameCorrespondingToAuthorId(projectData);
+    assert.equal(result, "Felix Zuniga");
+
+    // Empty author id.
+    projectData = { authorId: '',
+      ownerIds: [],
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    result = index.setAuthorNameCorrespondingToAuthorId(projectData);
+    assert.deepEqual(result, []);
+
+    // Invalid user id.
+    projectData = { authorId: 'foo',
+      ownerIds: ["foo"],
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    result = index.setAuthorNameCorrespondingToAuthorId(projectData);
+    assert.deepEqual(result, []);
+
+    // undefined author id.
+    projectData = {
+      ownerIds: ['KUABMKIC'],
+      status: 'Completed',
+      createdDate: '2017-08-07T21:53:39Z',
+      completedDate: '2017-12-04T16:41:15Z'
+    };
+    result = index.setAuthorNameCorrespondingToAuthorId(projectData);
+    assert.deepEqual(result, []);
+  })
 })
