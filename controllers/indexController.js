@@ -1,275 +1,299 @@
 var express = require('express')
-,request = require('request')
-,async = require('async')
-,token = 'WF3CJdNr9VJjz6t69tHsxUlJpcGMGaBezlukvEX0fEJ5UnVroZm6EfL5WKi0LirE-N-WFIUK'
-,hostname = 'http://www.wrike.com/api/v3'
-,parseJson = require('json-parse-better-errors')
-,jsonResult = []
-,jsonResStr = ''
-,fields = {}
-,projects = {}
-,users = {};
+var request = require('request')
+var async = require('async')
+var token = 'WF3CJdNr9VJjz6t69tHsxUlJpcGMGaBezlukvEX0fEJ5UnVroZm6EfL5WKi0LirE-N-WFIUK'
+var hostname = 'http://www.wrike.com/api/v3'
+var parseJson = require('json-parse-better-errors')
+var fields = {}
+var users = {}
 
 // Router for /home page.
-home = function(req, res) {
-  res.send('HTTP code 200');
-};
-
-// Wrapper for HTTP GET.
-function wrikeHttpGet(arg, callback) {
-  var foldersJson = [];
-  var individualProjectData = '';
-  request.get(hostname + '/folders/' + arg, {
-      'auth': {
-        'bearer': token
-      },
-    'content-type': 'application/json',
-    }, function(err, resp) {
-    if (err) {
-      console.log(err);
-      throw err;
-    }
-    try {
-      parseJson(resp.body);
-      foldersJson = JSON.parse(resp.body);
-      individualProjectData = parseProjects(foldersJson, null);
-      jsonResult.push(individualProjectData);
-    } catch (e) {
-      console.log(e);
-      throw e;
-    }
-    callback(null, individualProjectData);
-  });
+var home = function (req, res) {
+  res.send('HTTP code 200')
 }
 
 // Get projects/folders from Wrike.
-getProjects = function(req, res, error) {
+// @Todo test this.
+var getProjects = function (req, res, error) {
+  var result = {}
   request.get(hostname + '/folders', {
     'auth': {
       'bearer': token
     }
   }, function (error, response, body) {
     if (error) {
-      res.sendStatus(500);
-      return console.log(new Date() + ' => Error encountered during API response:', error);
+      res.sendStatus(500)
+      return console.log(new Date() + ' => Error encountered during API response:', error)
     }
-    getFolders(body, res)
+    getFolders(body)
     .then(function (value) {
-      // @Todo flatten the array before displaying it.
-      res.json(value);
-    });
-    getFields(getFieldsKeyValue);
-    getUsers(getUsersKeyValue);
-  });
-};
+      // Necessary to append a key "WrikeProjects" for Drupal to parse the result.
+      result.WrikeProjects = value
+      res.json(result)
+    })
+    getFields(getFieldsKeyValue, res)
+    getUsers(getUsersKeyValue, res)
+  })
+}
 
 // Parse project data received from Wrike.
-function getFolders(data, res) {
-  var projectIds = new Array()
-    ,pidBucket = []
-    ,noOfProjectArrays = 0
-    ,projectIdsString = null
-    ,wrikeJsonData = null
-    ,chunks = []
-    ,jsonResult = new Array();
+// @Todo test for duplicate items.
+function getFolders (data) {
+  var projectIds = {}
+  var pidBucket = {}
+  var noOfProjectArrays = 0
+  var jsonData = null
 
-  try {
-    parseJson(JSON.stringify(data));
-    if (typeof data === 'string') {
-      data = JSON.parse(data);
-    }
-  } catch(e) {
-    console.log(e);
-    throw e;
+  jsonData = getJson(data)
+  projectIds = getProjectIds(jsonData)
+  if (typeof projectIds !== 'undefined' && projectIds.length !== 0) {
+    noOfProjectArrays = Math.ceil(projectIds.length / 100)
+    pidBucket = splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds)
   }
 
-  projectIds = getProjectIds(data);
-  projectIdsString = projectIds.join();
-  noOfProjectArrays = Math.ceil(projectIds.length/100);
-  pidBucket = splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds);
-
-  return new Promise(function(resolve, reject) {
+  return new Promise(function (resolve, reject) {
     async.map(pidBucket, wrikeHttpGet, function (err, result) {
       if (err) {
-        console.log("Promise error => " + err);
-        reject(err);
+        console.log('Promise error => ' + err)
+        reject(err)
       }
-      resolve(result);
-    });
-  });
+      // Flatten array.
+      var concatResult = [].concat.apply([], result)
+      resolve(concatResult)
+    })
+  })
 };
 
 // Only 100 project ids can be used as arguments to the Wrike API in one request.
 // Since we have more than 100 project ids, we create an array where each element has
 // 100 project ids separated by ','.
-function splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds) {
+function splitProjectIdsIntoHundredItemsPerArrayElement (noOfProjectArrays, projectIds) {
   var pidBucket = []
-    ,lastCount = 0
-    ,count = 0;
+  var lastCount = 0
+  var count = 0
+  // Create an array where each element contains a string of at most hundred project id's separated by commas.
   for (var i = 0; i < noOfProjectArrays; i++) {
-    count = 100+lastCount;
-    var str = '';
+    count = 100 + lastCount
+    var str = ''
+    var sliceStr = ''
     for (var j = lastCount; j < count; j++) {
-      if (typeof projectIds[j] != 'undefined') {
-        str += projectIds[j] + ",";
-        lastCount = j;
+      // If current index contains a project Id.
+      if (typeof projectIds[j] !== 'undefined') {
+        // If the next index contains a project id, add a comma (,).
+        // test if j+1 >= count. The current check will pass for all
+        // except for the last element in projectIds.
+        if (typeof projectIds[j + 1] !== 'undefined') {
+          str += projectIds[j] + ','
+        } else { // last element.
+          str += projectIds[j]
+        }
+        lastCount = j
       }
     }
-    pidBucket[i] = str;
+    // Strip out trailing comma (,) if it exists.
+    if (str.charAt(str.length - 1) === ',') {
+      sliceStr = str.slice(0, str.length - 1)
+    }
+    pidBucket[i] = (sliceStr.length !== 0) ? sliceStr : str
   }
-  return pidBucket;
+  return pidBucket
 }
 
-// Return project ids from json.
-function getProjectIds(data) {
+// Return project ids from JSON.
+function getProjectIds (folderData) {
   var children
-    ,projectIds = new Array();
-  //data = JSON.stringify(data);
+  var projectIds = []
+  var data
 
-  try {
-    parseJson(JSON.stringify(data));
-    //data = JSON.parse(data);
-  } catch (err) {
-    console.log(err);
-    throw err;
-  }
-
-  if (data && data.data){
-    data.data.forEach(function(value) {
-      children = value.childIds;
-      if (children.length != 0) {
-        children.forEach(function(child) {
-          projectIds.push(child);
-        });
+  data = getJson(folderData)
+  if (data && data.data) {
+    data.data.forEach(function (value) {
+      children = value.childIds
+      if (typeof children !== 'undefined' && children.length !== 0) {
+        children.forEach(function (child) {
+          projectIds.push(child)
+        })
       }
-    });
+    })
   }
-  return projectIds;
+  return projectIds
 }
 
-// Get custom fields and their id.
-function getFields(callback) {
-  var jsonResult = [];
+// Get custom fields and their ids.
+function getFields (callback, res) {
   request.get(hostname + '/customfields', {
-      'auth': {
-        'bearer': token
-      }
-    })
-    .on('error', function(error) {
-      console.log("An error occured during HTTP GET." + error);
-    })
-    .on('data', function(data) {
-      jsonResult.push(data);
-    })
-    .on('end', function() {
-      customFields = jsonResult;
-      //callback(getFieldsKeyValue(jsonResult.toString()));
-      callback(jsonResult.toString());
-      //getFieldsKeyValue(jsonResult.toString());
-    });
+    'auth': {
+      'bearer': token
+    }
+  }, function (error, response, body) {
+    if (error) {
+      res.sendStatus(500)
+      return console.log(new Date() + ' => Error encountered during API response:', error)
+    }
+    callback(body)
+  })
 }
 
-function getFieldsKeyValue(fields) {
-  var jsonData = null;
-  try {
-    jsonData = JSON.parse(fields);
-  } catch(e) {
-    console.log(e);
-    jsonData = fields;
-  }
+// Return fields in the form {'field_id' : 'Field Name', ...}.
+// 'Field Name' is stripped of all empty spaces -  this is done to make it easier to
+// parse JSON when the data is received by Drupal.
+function getFieldsKeyValue (jsonResponse) {
+  var jsonData = getJson(jsonResponse)
   if (jsonData != null && jsonData.data != null) {
     jsonData.data.forEach(function (value) {
-      fields[value.id] = value.title.replace(/ /g, '');
-    });
+      if (value.id !== undefined && value.title !== undefined) {
+        fields[value.id] = value.title.replace(/ /g, '')
+      }
+    })
   } else {
-    return null;
+    return null
   }
-  return fields;
-  // @Todo Understanding callbacks
-  // https://github.com/maxogden/art-of-node#callbacks
-
-  // @Todo Test JSON fake data using
-  // https://jsonplaceholder.typicode.com/
-
-  // @Todo Fake JSON data
-  //https://github.com/marak/Faker.js/
-
-  // @Todo JSON schema faker
-  // https://github.com/json-schema-faker/json-schema-faker
+  return fields
 }
 
 // Get user information.
-// @Todo test this.
-function getUsers(callback) {
-  var jsonResult = [];
+function getUsers (callback, res) {
   request.get(hostname + '/contacts', {
-      'auth': {
-        'bearer': token
-      },
+    'auth': {
+      'bearer': token
+    }
+  }, function (error, response, body) {
+    if (error) {
+      res.sendStatus(500)
+      return console.log(new Date() + ' => Error encountered during API response:', error)
+    }
+    callback(body)
   })
-  .on('error', function(error) {
-    console.log("An error occured during HTTP GET.");
-  })
-  .on('data', function(data) {
-    jsonResult.push(data);
-  })
-  .on('end', function() {
-    //callback(getUsersKeyValue(jsonResult.toString()));
-    callback(jsonResult.toString());
-    //getUsersKeyValue(jsonResult.toString());
-  });
 }
 
 // Store relevant User information in key => value format.
-// @Todo test this.
-function getUsersKeyValue(userData) {
-  var jsonData = null;
-  try {
-    jsonData = JSON.parse(userData);
-  } catch(e) {
-    console.log(e);
-    jsonData = userData;
-  }
+function getUsersKeyValue (userData) {
+  var jsonData = getJson(userData)
   if (jsonData != null && jsonData.data != null) {
     jsonData.data.forEach(function (value) {
-      // Store it in the form foo[userid] => "First Last Name"
-      users[value.id] = value.firstName  + " " + value.lastName;
-    });
+      if (value.id !== undefined && value.firstName !== undefined && value.lastName !== undefined) {
+        // Store it in the form foo[userid] => "First Last Name"
+        users[value.id] = value.firstName + ' ' + value.lastName
+      }
+    })
   } else {
-    return null;
+    return null
   }
-  return users;
+  return users
 };
 
-// @Todo test this.
-function parseProjects(data, res) {
-  var jsonData = null
-    ,jsonId
-    ,jsonTitle
-    ,jsonStatus
-    ,jsonPermaLink
-    ,jsonCompletedDate
-    ,jsonResult = new Array();
+// Build JSON response.
+function parseProjects (data) {
+  var jsonData = getJson(data)
+  var jsonId = null
+  var jsonTitle = null
+  var jsonStatus = null
+  var jsonPermaLink = null
+  var jsonCompletedDate = null
+  var jsonCustomFields = null
+  var jsonProject = {}
+  var customFieldsCurrent = {}
+  var jsonResult = []
+  jsonProject.ownerNames = {}
+  jsonProject.authorName = {}
 
+  if (jsonData) {
+    jsonData.data.forEach(function (value) {
+      jsonId = (value.id !== undefined) ? value.id : ''
+      jsonTitle = (value.title !== undefined) ? value.title : ''
+      jsonStatus = (value.status !== undefined) ? value.status : ''
+      jsonPermaLink = (value.permalink !== undefined) ? value.permalink : ''
+      jsonCompletedDate = (value.completedDate !== undefined) ? value.completedDate : ''
+      jsonCustomFields = (value.customFields !== undefined) ? value.customFields : ''
+      jsonProject = (value.project !== undefined) ? value.project : ''
+      // Set a field "ownerNames".
+      jsonProject.ownerNames = setUserNameCorrespondingToUserId(jsonProject)
+      // Set a field "authorName".
+      jsonProject.authorName = setAuthorNameCorrespondingToAuthorId(jsonProject)
+      // Replace 'customField' 'id' with value from 'fields' variable.
+      // This value is fields.title
+      if (jsonCustomFields.length !== 0) {
+        jsonCustomFields.forEach(function (fieldValue) {
+          // Replace each 'Custom Field' ID with its appropriate value from 'fields' variable.
+          var res = setCustomFieldsKeyValue(fieldValue.id, fieldValue.value)
+          customFieldsCurrent[res.key] = res.value
+        })
+      }
+      jsonResult.push({id: jsonId, project: jsonProject, customFields: customFieldsCurrent, title: jsonTitle, status: jsonStatus, permalink: jsonPermaLink, completedDate: jsonCompletedDate})
+    })
+  }
+  return jsonResult
+}
+
+// Get user name from "ownerId".
+function setUserNameCorrespondingToUserId (projectData) {
+  var userName = []
+  if (typeof projectData.ownerIds !== 'undefined') {
+    projectData.ownerIds.forEach(function (value) {
+      if (users[value] !== undefined) {
+        userName.push(users[value])
+      }
+    })
+  }
+  return userName
+}
+
+// Get author name from "authorId".
+function setAuthorNameCorrespondingToAuthorId (projectData) {
+  var authorName = []
+  if (typeof projectData.authorId !== 'undefined') {
+    if (users[projectData.authorId] !== undefined) {
+      authorName.push(users[projectData.authorId])
+    }
+  }
+  return authorName
+}
+
+// Get value for field "ProjectMPP" and other fields.
+function setCustomFieldsKeyValue (fieldKey, fieldValue) {
+  var result = {}
+  if (fields[fieldKey] === 'ProjectMPP') {
+    result.key = fields[fieldKey]
+    result.value = users[fieldValue]
+    return result
+  }
+  result.key = fields[fieldKey]
+  result.value = fieldValue
+  return result
+}
+
+// Validate JSON format. Return a JSON object. If JSON format is not valid throw error.
+function getJson (json) {
+  var result = json
   try {
-    parseJson(JSON.stringify(data));
-    jsonData = data;
-  } catch(e) {
-    console.log(e);
-    throw e;
+    parseJson(JSON.stringify(json))
+    if (typeof json === 'string') {
+      result = JSON.parse(json)
+    }
+  } catch (e) {
+    throw e
   }
+  return result
+}
 
-  if (jsonData){
-    jsonData.data.forEach(function(value){
-      jsonId = (value.id !== undefined) ? value.id: '';
-      jsonTitle = (value.title !== undefined) ? value.title: '';
-      jsonStatus = (value.status !== undefined) ? value.status: '';
-      jsonPermaLink = (value.permalink !== undefined) ? value.permalink: '';
-      jsonCompletedDate = (value.completedDate !== undefined) ? value.completedDate : "";
-      jsonResult.push({id: jsonId, title: jsonTitle, status: jsonStatus, permalink: jsonPermaLink, completedDate: jsonCompletedDate});
-    });
-  }
-  return jsonResult;
+// Wrapper for HTTP GET.
+function wrikeHttpGet (arg, callback) {
+  var foldersJson = []
+  var individualProjectData = ''
+  request.get(hostname + '/folders/' + arg, {
+    'auth': {
+      'bearer': token
+    },
+    'content-type': 'application/json'
+  }, function (err, resp) {
+    if (err) {
+      console.log(err)
+      throw err
+    }
+    foldersJson = getJson(resp.body)
+    individualProjectData = parseProjects(foldersJson, null)
+    callback(null, individualProjectData)
+  })
 }
 
 module.exports = {
@@ -278,12 +302,16 @@ module.exports = {
   parseProjects: parseProjects,
   getProjectIds: getProjectIds,
   wrikeHttpGet: wrikeHttpGet,
-  getFields : getFields,
+  getFields: getFields,
   getFieldsKeyValue: getFieldsKeyValue,
   getUsers: getUsers,
   getUsersKeyValue: getUsersKeyValue,
   getFolders: getFolders,
   splitProjectIdsIntoHundredItemsPerArrayElement: splitProjectIdsIntoHundredItemsPerArrayElement,
+  setCustomFieldsKeyValue: setCustomFieldsKeyValue,
+  setUserNameCorrespondingToUserId: setUserNameCorrespondingToUserId,
+  setAuthorNameCorrespondingToAuthorId: setAuthorNameCorrespondingToAuthorId,
+  fields: fields,
   hostname: hostname,
   token: token
-};
+}
