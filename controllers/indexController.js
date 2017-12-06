@@ -192,13 +192,13 @@ function parseProjects (data) {
   var jsonCompletedDate = null
   var jsonCustomFields = null
   var jsonProject = {}
-  var customFieldsCurrent = {}
   var jsonResult = []
   jsonProject.ownerNames = {}
   jsonProject.authorName = {}
 
   if (jsonData) {
     jsonData.data.forEach(function (value) {
+      var customFieldsCurrent = {}
       jsonId = (value.id !== undefined) ? value.id : ''
       jsonTitle = (value.title !== undefined) ? value.title : ''
       jsonStatus = (value.status !== undefined) ? value.status : ''
