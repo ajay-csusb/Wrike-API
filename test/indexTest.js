@@ -18,13 +18,13 @@ var contactsJson = require('./contacts.json')
 var mockData = require('./mockData.js').mockData()
 
 describe('Wrike API Tests.', function () {
-  it.only('Test homepage', function (done) {
+  it('Test homepage', function (done) {
     supertest(app)
       .get('/')
       .expect(200, done)
   })
 
-  it.only('Test getFolders() function', function (done) {
+  it('Test getFolders() function', function (done) {
     // @Todo test async code https://medium.com/caffeine-and-testing/async-testing-with-mocha-with-callbacks-and-promises-5d0002661b3f
     index.getFolders(foldersJson).then(function (result) {
       assert.equal(18, result.length)
@@ -36,7 +36,39 @@ describe('Wrike API Tests.', function () {
     })
   })
 
-  it.only('Test getProjectIds function', function () {
+  it('Test splitProjectIdsIntoHundredItemsPerArrayElement() function', function () {
+    var projectIds = index.getProjectIds(foldersJson)
+    var noOfProjectArrays = Math.ceil(projectIds.length / 100)
+
+    var result = index.splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds)
+    assert.equal(6, result.length)
+    // 100 elements where each element is 16 chars long separated by (,) commas(99).
+    assert.equal((100 * 16 + 99), result[0].length)
+    assert.equal(53 * 16 + 52, result[5].length)
+    assert.isFalse(result[0].endsWith(','), 'No trailing comma found in the first element.')
+    assert.isFalse(result[5].endsWith(','), 'No trailing comma found in the last element.')
+
+    var json = {
+      'data': [{
+        'id': 1,
+        'title': 'bar',
+        'childIds': [
+          'IEAAVFCRI4DTAVJS',
+          'IEAAVFCRI4CCTVBL',
+          'IEAAVFCRI4CHEO3Q',
+          'IEAAVFCRI4CCT5FN'
+        ]
+      }]
+    }
+    projectIds = index.getProjectIds(json)
+    noOfProjectArrays = projectIds.length / 100
+    result = index.splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds)
+    assert.equal(1, result.length)
+    assert.equal((4 * 16 + 3), result[0].length)
+    assert.isFalse(result[0].endsWith(','))
+  })
+
+  it('Test getProjectIds function', function () {
     // Test for 1 project Id.
     var json = {
       'data': [{
@@ -97,38 +129,6 @@ describe('Wrike API Tests.', function () {
     result.should.have.lengthOf(0)
   })
 
-  it.only('Test splitProjectIdsIntoHundredItemsPerArrayElement() function', function () {
-    var projectIds = index.getProjectIds(foldersJson)
-    var noOfProjectArrays = Math.ceil(projectIds.length / 100)
-
-    var result = index.splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds)
-    assert.equal(6, result.length)
-    // 100 elements where each element is 16 chars long separated by (,) commas(99).
-    assert.equal((100 * 16 + 99), result[0].length)
-    assert.equal(53 * 16 + 52, result[5].length)
-    assert.isFalse(result[0].endsWith(','), 'No trailing comma found in the first element.')
-    assert.isFalse(result[5].endsWith(','), 'No trailing comma found in the last element.')
-
-    var json = {
-      'data': [{
-        'id': 1,
-        'title': 'bar',
-        'childIds': [
-          'IEAAVFCRI4DTAVJS',
-          'IEAAVFCRI4CCTVBL',
-          'IEAAVFCRI4CHEO3Q',
-          'IEAAVFCRI4CCT5FN'
-        ]
-      }]
-    }
-    projectIds = index.getProjectIds(json)
-    noOfProjectArrays = projectIds.length / 100
-    result = index.splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds)
-    assert.equal(1, result.length)
-    assert.equal((4 * 16 + 3), result[0].length)
-    assert.isFalse(result[0].endsWith(','))
-  })
-
   // it.only('Test wrike projects', function (done) {
   //  supertest(app)
   //    .get('/get/wrike/projects')
@@ -155,7 +155,7 @@ describe('Wrike API Tests.', function () {
      // });
    // });
 
-  it.only('Test getFields() function', function (done) {
+  it('Test getFields() function', function (done) {
     // @Todo test for 500 errors.
     // Check right argument is passed to callback.
     index.getFields(function (res) {
@@ -165,7 +165,7 @@ describe('Wrike API Tests.', function () {
     })
   })
 
-  it.only('Test getFieldsKeyValue() function', function () {
+  it('Test getFieldsKeyValue() function', function () {
     // Assert correct key value pair exists.
     var result = index.getFieldsKeyValue(fieldsJson)
     assert.equal(result.IEAAVFCRJUAADIXA, 'IncludeinALLITSProjects')
@@ -190,7 +190,7 @@ describe('Wrike API Tests.', function () {
     }, Error)
   })
 
-  it.only('Test getUsers() function', function (done) {
+  it('Test getUsers() function', function (done) {
     // @Todo test for 500 errors.
     // Check right argument is passed to callback.
     index.getUsers(function (res) {
@@ -200,7 +200,7 @@ describe('Wrike API Tests.', function () {
     }, done)
   })
 
-  it.only('Test getUsersKeyValue() function', function () {
+  it('Test getUsersKeyValue() function', function () {
     // Assert correct key value pair exists.
     var result = index.getUsersKeyValue(contactsJson)
     assert.equal(result.KUABNSLV, 'Michael Casadonte')
@@ -225,32 +225,9 @@ describe('Wrike API Tests.', function () {
     }, Error)
   })
 
-  it.only('Test setCustomFieldsKeyValue function', function () {
+  it('Test parseProject function', function () {
     index.getFieldsKeyValue(fieldsJson)
     index.getUsersKeyValue(contactsJson)
-    var result = index.setCustomFieldsKeyValue('IEAAVFCRJUAACEBT', 'KUABUZ2V')
-    assert.equal(result.key, 'ProjectMPP')
-    assert.equal(result.value, 'Khalil Daneshvar')
-
-    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAADIXA', 'foo')
-    assert.equal(result.key, 'IncludeinALLITSProjects')
-    assert.equal(result.value, 'foo')
-
-    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAADNPU', 'buzz')
-    assert.equal(result.key, 'ProjectSummary')
-    assert.equal(result.value, 'buzz')
-
-    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAACZZF', 'bar')
-    assert.equal(result.key, 'Category')
-    assert.equal(result.value, 'bar')
-
-    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAAC4KN', 'baz')
-    assert.equal(result.key, 'Percentcomplete')
-    assert.equal(result.value, 'baz')
-  })
-
-  it.only('Test parseProject function', function () {
-    index.getFieldsKeyValue(fieldsJson)
     // If 'null' is passed as an argument.
     var result = index.parseProjects(null)
     result.should.be.an('array')
@@ -271,14 +248,34 @@ describe('Wrike API Tests.', function () {
         ],
         'customFields': [
           {
-            'IEAAVFCRJUAACZZF': 'foo',
-            'IEAAVFCRJUAAC4KN': 'buzz'
+            'id': 'IEAAVFCRJUAACZZF',
+            'value': 'foo'
           },
           {
-            'IEAAVFCRJUAADIXA': 'bar',
-            'IEAAVFCRJUAADNPU': 'baz'
+            'id': 'IEAAVFCRJUAAC4KN',
+            'value': 'bar'
+          },
+          {
+            'id': 'IEAAVFCRJUAADIXA',
+            'value': 'baz'
+          },
+          {
+            'id': 'IEAAVFCRJUAADNPU',
+            'value': 'buzz'
+          },
+          {
+            'id': 'IEAAVFCRJUAACEBT',
+            'value': 'KUABNOLM'
           }
-        ]
+        ],
+        'project': {
+          'authorId': 'KUABMKIC',
+          'ownerIds': ['KUABMKIC', 'KUABNSLV'],
+          'status': 'Green',
+          'startDate': '2015-08-26',
+          'endDate': '2015-11-17',
+          'createdDate': '2016-06-17T19:25:58Z'
+        }
       }]
     }
 
@@ -286,8 +283,6 @@ describe('Wrike API Tests.', function () {
     result.should.be.a('array')
     result.should.have.lengthOf(1)
 
-    // @Todo check if custom fields are set correctly.
-    // @Todo check project fields are set correctly.
     assert.equal(result[0].id, 1)
     assert.equal(result[0].title, 'bar')
     assert.equal(result[0].status, 'incomplete')
@@ -295,9 +290,16 @@ describe('Wrike API Tests.', function () {
     assert.equal(result[0].completedDate, '12/20/2020')
     assert.isDefined(result[0].project)
     assert.isDefined(result[0].customFields)
+    assert.equal(result[0].customFields.Category, 'foo')
+    assert.equal(result[0].customFields.Percentcomplete, 'bar')
+    assert.equal(result[0].customFields.IncludeinALLITSProjects, 'baz')
+    assert.equal(result[0].customFields.ProjectSummary, 'buzz')
+    assert.equal(result[0].customFields.ProjectMPP, 'Jim Olinger')
+    assert.equal(result[0].project.authorName, 'Felix Zuniga')
+    assert.deepEqual(result[0].project.ownerNames, ['Felix Zuniga', 'Michael Casadonte'])
   })
 
-  it.only('Test setUserNameCorrespondingToUserId function', function () {
+  it('Test setUserNameCorrespondingToUserId function', function () {
     index.getUsersKeyValue(contactsJson)
     // Single user id.
     var projectData = { authorId: 'KUABMKIC',
@@ -340,7 +342,7 @@ describe('Wrike API Tests.', function () {
     assert.deepEqual(result, [])
   })
 
-  it.only('Test setAuthorNameCorrespondingToAuthorId function', function () {
+  it('Test setAuthorNameCorrespondingToAuthorId function', function () {
     index.getUsersKeyValue(contactsJson)
     // Single author id.
     var projectData = { authorId: 'KUABMKIC',
@@ -381,5 +383,29 @@ describe('Wrike API Tests.', function () {
     }
     result = index.setAuthorNameCorrespondingToAuthorId(projectData)
     assert.deepEqual(result, [])
+  })
+
+  it('Test setCustomFieldsKeyValue function', function () {
+    index.getFieldsKeyValue(fieldsJson)
+    index.getUsersKeyValue(contactsJson)
+    var result = index.setCustomFieldsKeyValue('IEAAVFCRJUAACEBT', 'KUABUZ2V')
+    assert.equal(result.key, 'ProjectMPP')
+    assert.equal(result.value, 'Khalil Daneshvar')
+
+    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAADIXA', 'foo')
+    assert.equal(result.key, 'IncludeinALLITSProjects')
+    assert.equal(result.value, 'foo')
+
+    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAADNPU', 'buzz')
+    assert.equal(result.key, 'ProjectSummary')
+    assert.equal(result.value, 'buzz')
+
+    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAACZZF', 'bar')
+    assert.equal(result.key, 'Category')
+    assert.equal(result.value, 'bar')
+
+    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAAC4KN', 'baz')
+    assert.equal(result.key, 'Percentcomplete')
+    assert.equal(result.value, 'baz')
   })
 })
