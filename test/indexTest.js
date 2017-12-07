@@ -56,9 +56,8 @@ describe('Wrike API Tests.', () => {
     assert.equal(6, result.length);
     // Mock folders.json file contains 548 folder details. 29 of them are duplicates.
     // 100 elements where each element is 16 chars long separated by (,) commas(99).
-    assert.equal(((100 * 16) + 99), result[0].length);
-    // @Todo figure out how to test the length of last element.
-    // assert.equal(12 * 16 + 11, result[5].length)
+    assert.equal(((99 * 16) + 98), result[0].length);
+    assert.equal((12 * 16) + 11, result[5].length)
     assert.isFalse(result[0].endsWith(','), 'No trailing comma found in the first element.');
     assert.isFalse(result[5].endsWith(','), 'No trailing comma found in the last element.');
 

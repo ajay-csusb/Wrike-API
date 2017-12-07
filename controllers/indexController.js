@@ -22,13 +22,12 @@ function getJson(json) {
   return result;
 }
 
-
 // Only 100 project ids can be used as arguments to the Wrike API in one request.
 // Since we have more than 100 project ids, we create an array where each element has
 // 100 project ids separated by ','.
 function splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds) {
   const pidBucket = [];
-  let lastCount = 0;
+  let lastCount = -1;
   let count = 0;
   // Create an array where each element contains a string of at most hundred
   // project id's separated by commas.
@@ -36,7 +35,7 @@ function splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, proje
     count = 100 + lastCount;
     let str = '';
     let sliceStr = '';
-    for (let j = lastCount; j < count; j += 1) {
+    for (let j = lastCount + 1; j < count; j += 1) {
       // If current index contains a project Id.
       if (typeof projectIds[j] !== 'undefined') {
         // If the next index contains a project id, add a comma (,).
@@ -292,11 +291,10 @@ function getProjects(req, res) {
   }, (error, response, body) => {
     if (error) {
       res.sendStatus(500);
-      // return console.log(`${new Date()} => Error encountered during API response:`, error);
     }
     getFolders(body)
       .then((value) => {
-      // Necessary to append a key "WrikeProjects" for Drupal to parse the result.
+        // Necessary to append a key "WrikeProjects" for Drupal to parse the result.
         result.WrikeProjects = value;
         res.json(result);
       });
