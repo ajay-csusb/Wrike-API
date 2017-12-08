@@ -128,6 +128,7 @@ function parseProjects(data) {
   let jsonStatus = null;
   let jsonPermaLink = null;
   let jsonCompletedDate = null;
+  let jsonDescription = null;
   let jsonCustomFields = null;
   let jsonProject = {};
   const jsonResult = [];
@@ -142,6 +143,7 @@ function parseProjects(data) {
       jsonStatus = (value.status !== undefined) ? value.status : '';
       jsonPermaLink = (value.permalink !== undefined) ? value.permalink : '';
       jsonCompletedDate = (value.completedDate !== undefined) ? value.completedDate : '';
+      jsonDescription = (value.description !== undefined) ? value.description : '';
       jsonCustomFields = (value.customFields !== undefined) ? value.customFields : '';
       jsonProject = (value.project !== undefined) ? value.project : '';
       // Set a field "ownerNames".
@@ -165,6 +167,7 @@ function parseProjects(data) {
         status: jsonStatus,
         permalink: jsonPermaLink,
         completedDate: jsonCompletedDate,
+        description: jsonDescription,
       });
     });
   }

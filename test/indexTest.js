@@ -247,6 +247,7 @@ describe('Wrike API Tests.', () => {
         status: 'incomplete',
         permalink: 'http://www.example.com',
         completedDate: '12/20/2020',
+        description: 'loreum ipsum',
         childIds: [
           'IEAAVFCRI4DTAVJS',
           'IEAAVFCRI4CCTVBL',
@@ -295,6 +296,7 @@ describe('Wrike API Tests.', () => {
     assert.equal(result[0].status, 'incomplete');
     assert.equal(result[0].permalink, 'http://www.example.com');
     assert.equal(result[0].completedDate, '12/20/2020');
+    assert.equal(result[0].description, 'loreum ipsum');
     assert.isDefined(result[0].project);
     assert.isDefined(result[0].customFields);
     assert.equal(result[0].customFields.Category, 'foo');
@@ -351,6 +353,11 @@ describe('Wrike API Tests.', () => {
     };
     result = index.setUserNameCorrespondingToOwnerId(projectData);
     assert.deepEqual(result, []);
+
+    // Empty project Id.
+    projectData = {};
+    result = index.setUserNameCorrespondingToOwnerId(projectData);
+    assert.deepEqual(result, []);
   });
 
   it('Test setAuthorNameCorrespondingToAuthorId function', () => {
@@ -395,6 +402,11 @@ describe('Wrike API Tests.', () => {
       createdDate: '2017-08-07T21:53:39Z',
       completedDate: '2017-12-04T16:41:15Z',
     };
+    result = index.setAuthorNameCorrespondingToAuthorId(projectData);
+    assert.deepEqual(result, []);
+
+    // Empty project Id.
+    projectData = {};
     result = index.setAuthorNameCorrespondingToAuthorId(projectData);
     assert.deepEqual(result, []);
   });
