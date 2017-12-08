@@ -404,7 +404,12 @@ describe('Wrike API Tests.', () => {
     index.getUsersKeyValue(contactsJson);
     let result = index.setCustomFieldsKeyValue('IEAAVFCRJUAACEBT', 'KUABUZ2V');
     assert.equal(result.key, 'ProjectMPP');
-    assert.equal(result.value, 'Khalil Daneshvar');
+    assert.deepEqual(result.value, ['Khalil Daneshvar']);
+
+    // Multiple MPP's.
+    result = index.setCustomFieldsKeyValue('IEAAVFCRJUAACEBT', 'KUABUZ2V,KUABNUJS,KUABSMOY');
+    assert.equal(result.key, 'ProjectMPP');
+    assert.deepEqual(result.value, ['Khalil Daneshvar', 'Gerard Au', 'Javier Torner']);
 
     result = index.setCustomFieldsKeyValue('IEAAVFCRJUAADIXA', 'foo');
     assert.equal(result.key, 'IncludeinALLITSProjects');

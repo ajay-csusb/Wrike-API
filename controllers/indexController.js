@@ -106,9 +106,13 @@ function setAuthorNameCorrespondingToAuthorId(projectData) {
 // Get value for field "ProjectMPP" and other fields.
 function setCustomFieldsKeyValue(fieldKey, fieldValue) {
   const result = {};
+  result.value = [];
   if (fields[fieldKey] === 'ProjectMPP') {
     result.key = fields[fieldKey];
-    result.value = users[fieldValue];
+    const fieldValueArr = fieldValue.split(',');
+    fieldValueArr.forEach((x) => {
+      result.value.push(users[x]);
+    });
     return result;
   }
   result.key = fields[fieldKey];
