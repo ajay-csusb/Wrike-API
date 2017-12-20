@@ -48,11 +48,11 @@ describe('Wrike API Tests.', () => {
     });
   });
 
-  it('Test splitProjectIdsIntoHundredItemsPerArrayElement() function', () => {
+  it('Test splitProjectIdsIntoHundredItemsPerArrayRow() function', () => {
     let projectIds = index.getProjectIds(foldersJson);
     let noOfProjectArrays = Math.ceil(projectIds.length / 100);
 
-    let result = index.splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds);
+    let result = index.splitProjectIdsIntoHundredItemsPerArrayRow(noOfProjectArrays, projectIds);
     assert.equal(6, result.length);
     // Mock folders.json file contains 548 folder details. 29 of them are duplicates.
     // 100 elements where each element is 16 chars long separated by (,) commas(99).
@@ -75,7 +75,7 @@ describe('Wrike API Tests.', () => {
     };
     projectIds = index.getProjectIds(json);
     noOfProjectArrays = projectIds.length / 100;
-    result = index.splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds);
+    result = index.splitProjectIdsIntoHundredItemsPerArrayRow(noOfProjectArrays, projectIds);
     assert.equal(1, result.length);
     assert.equal(((4 * 16) + 3), result[0].length);
     assert.isFalse(result[0].endsWith(','));

@@ -1,7 +1,7 @@
 const request = require('request');
 const async = require('async');
 
-const token = 'WF3CJdNr9VJjz6t69tHsxUlJpcGMGaBezlukvEX0fEJ5UnVroZm6EfL5WKi0LirE-N-WFIUK';
+const token = process.env.WRIKE_API_TOKEN;
 const hostname = 'http://www.wrike.com/api/v3';
 const parseJson = require('json-parse-better-errors');
 
@@ -25,13 +25,13 @@ function getJson(json) {
 // Only 100 project ids can be used as arguments to the Wrike API in one request.
 // Since we have more than 100 project ids, we create an array where each element has
 // 100 project ids separated by ','.
-function splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds) {
-  const pidBucket = [];
+function splitProjectIdsIntoHundredItemsPerArrayRow(noOfRowsArrays, projectIds) {
+  const pidArray = [];
   let lastCount = -1;
   let count = 0;
-  // Create an array where each element contains a string of at most hundred
+  // Create an array where each row contains a string of at most hundred
   // project id's separated by commas.
-  for (let i = 0; i < noOfProjectArrays; i += 1) {
+  for (let row = 0; row < noOfRowsArrays; row += 1) {
     count = 100 + lastCount;
     let str = '';
     let sliceStr = '';
@@ -53,9 +53,9 @@ function splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, proje
     if (str.charAt(str.length - 1) === ',') {
       sliceStr = str.slice(0, str.length - 1);
     }
-    pidBucket[i] = (sliceStr.length !== 0) ? sliceStr : str;
+    pidArray[row] = (sliceStr.length !== 0) ? sliceStr : str;
   }
-  return pidBucket;
+  return pidArray;
 }
 
 // Return project ids from JSON.
@@ -176,7 +176,7 @@ function parseProjects(data) {
 
 // Wrapper for HTTP GET.
 function wrikeHttpGet(arg, callback) {
-  let foldersJson = [];
+  let projectDetails = [];
   let individualProjectData = '';
   request.get(`${hostname}/folders/${arg}`, {
     auth: {
@@ -187,8 +187,8 @@ function wrikeHttpGet(arg, callback) {
     if (err) {
       throw err;
     }
-    foldersJson = getJson(resp.body);
-    individualProjectData = parseProjects(foldersJson, null);
+    projectDetails = getJson(resp.body);
+    individualProjectData = parseProjects(projectDetails, null);
     callback(null, individualProjectData);
   });
 }
@@ -197,7 +197,7 @@ function wrikeHttpGet(arg, callback) {
 // @Todo test for duplicate items.
 function getFolders(data) {
   let projectIds = {};
-  let pidBucket = {};
+  let pidArray = {};
   let noOfProjectArrays = 0;
   let jsonData = null;
 
@@ -206,10 +206,10 @@ function getFolders(data) {
 
   if (typeof projectIds !== 'undefined' && projectIds.length !== 0) {
     noOfProjectArrays = Math.ceil(projectIds.length / 100);
-    pidBucket = splitProjectIdsIntoHundredItemsPerArrayElement(noOfProjectArrays, projectIds);
+    pidArray = splitProjectIdsIntoHundredItemsPerArrayRow(noOfProjectArrays, projectIds);
   }
   return new Promise(((resolve, reject) => {
-    async.map(pidBucket, wrikeHttpGet, (err, result) => {
+    async.map(pidArray, wrikeHttpGet, (err, result) => {
       if (err) {
         reject(err);
       }
@@ -234,6 +234,9 @@ function getFields(callback, res) {
   });
 }
 
+// customFields are in the format
+// "customFields": [{"id": "IEAAVFCRJUAACEBT","value": "KUABWUQK"},
+// {"id": "IEAAVFCRJUAADNPU","value": "PAWS and MyCAP Upgrade"}],
 // Return fields in the form {'field_id' : 'Field Name', ...}.
 // 'Field Name' is stripped of all empty spaces -  this is done to make it easier to
 // parse JSON when the data is received by Drupal.
@@ -281,7 +284,6 @@ function getUsersKeyValue(userData) {
   return users;
 }
 
-
 // Router for /home page.
 function home(req, res) {
   res.send('HTTP code 200');
@@ -321,7 +323,7 @@ module.exports = {
   getUsers,
   getUsersKeyValue,
   getFolders,
-  splitProjectIdsIntoHundredItemsPerArrayElement,
+  splitProjectIdsIntoHundredItemsPerArrayRow,
   setCustomFieldsKeyValue,
   setUserNameCorrespondingToOwnerId,
   setAuthorNameCorrespondingToAuthorId,
