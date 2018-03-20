@@ -5,7 +5,7 @@ let query = {};
 
 // Send event updates to Drupal installations.
 function broadcastEventUpdates(domains, callback) {
-  request.get(`https://${domains}/update-events`, { qs: query, timeout: 1500 }, (error, response, body) => {
+  request.get(`https://${domains}/update-events`, { qs: query }, (error, response, body) => {
     if (error) {
       console.log(error);
     }
