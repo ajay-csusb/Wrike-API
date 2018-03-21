@@ -16,7 +16,7 @@ function broadcastEventUpdates(domains, callback) {
 // Broadcast event to all installation on Acquia.
 function broadcastEvents(req, res) {
   query = req.query;
-  async.map(req.body, broadcastEventUpdates, (error, result) => {
+  async.mapSeries(req.body, broadcastEventUpdates, (error, result) => {
     if (error) {
       console.log(error);
     }
