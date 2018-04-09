@@ -145,7 +145,7 @@ function parseProjects(data) {
       jsonCompletedDate = (value.completedDate !== undefined) ? value.completedDate : '';
       jsonDescription = (value.description !== undefined) ? value.description : '';
       jsonCustomFields = (value.customFields !== undefined) ? value.customFields : '';
-      jsonProject = (value.project !== undefined) ? value.project : '';
+      jsonProject = (value.project !== undefined) ? value.project : {};
       // Set a field "ownerNames".
       jsonProject.ownerNames = setUserNameCorrespondingToOwnerId(jsonProject);
       // Set a field "authorName".
