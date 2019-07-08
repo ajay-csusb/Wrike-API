@@ -1,0 +1,4217 @@
+{
+  "kind": "contacts",
+  "data": [
+    {
+      "id": "KX76MXBA",
+      "firstName": "ACBI",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//A7/D3/Circle_ff5285b8_65-67_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUAB7YI6",
+        "KUABW4QI",
+        "KUAB726F",
+        "KUAB7YJC",
+        "KUAB5QNT",
+        "KUABWUQK",
+        "KUABYCOL",
+        "KUAB3JK7",
+        "KUAB3J5T",
+        "KUAB3L4Z",
+        "KUAB3MAU",
+        "KUAB3J2L"
+      ]
+    },
+    {
+      "id": "KX75IMCV",
+      "firstName": "ALL ITS",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//8F/62/Circle_ff5285b8_65-73_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUADBL4Q"
+      ]
+    },
+    {
+      "id": "KX77SKLT",
+      "firstName": "ATI",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//D5/9B/Circle_ff8aaf61_65-84_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABR6UD",
+        "KUABQNBF",
+        "KUABR7ND",
+        "KUABQQR4",
+        "KUAB2BSK",
+        "KUABVT3K",
+        "KUABVU33",
+        "KUABMKIC",
+        "KUABNQVE",
+        "KUABO5GD",
+        "KUABO5MQ",
+        "KUABRWYI",
+        "KUABWZ74",
+        "KUABSNGJ",
+        "KUABOKRA",
+        "KUABQCLG",
+        "KUABVNRT",
+        "KUAB3L4Z"
+      ]
+    },
+    {
+      "id": "KUAB4YQG",
+      "firstName": "Aaron",
+      "lastName": "Oxendine",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "aoxendin@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_18.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABNOMA",
+      "firstName": "Abhishek",
+      "lastName": "Chander",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "achander@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_17.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Operating Systems Analyst",
+      "companyName": "CSU San Bernardino",
+      "phone": "909-537-7780",
+      "location": "PL-022"
+    },
+    {
+      "id": "KX77RXIG",
+      "firstName": "Admin & Finance",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//94/90/Circle_ff8bc9bc_65_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACMOS2",
+        "KUABNOJF",
+        "KUABNOE5",
+        "KUACMKPO"
+      ]
+    },
+    {
+      "id": "KUABNOMI",
+      "firstName": "Adrian",
+      "lastName": "Piceno",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "apiceno@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_6.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "phone": "+1 9095377287"
+    },
+    {
+      "id": "KUAB7WG5",
+      "firstName": "Agustin",
+      "lastName": "Castro",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "acastro@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F4/60/DPtTO6LAC0Hb.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADBL4Q",
+      "firstName": "Ajay",
+      "lastName": "J Kotian",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "ajay.kotian@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": true,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//39/28/Box_ff16a7bc_65-74_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "me": true,
+      "title": "Web Programmer"
+    },
+    {
+      "id": "KUABZ6MI",
+      "firstName": "Alicia",
+      "lastName": "Silva",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "asilva2@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": true,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_14.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACBURR",
+      "firstName": "Alix",
+      "lastName": "Larez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "005005568@coyote.csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_11.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "phone": "+1 9098158921"
+    },
+    {
+      "id": "KUAB4TZA",
+      "firstName": "Allan",
+      "lastName": "Taing",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "allan.taing@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_11.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADKQ6V",
+      "firstName": "Amy",
+      "lastName": "Beran",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "aberan@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//EF/EE/Box_fff17408_65-66_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Buyer"
+    },
+    {
+      "id": "KUADKRGK",
+      "firstName": "Anabel",
+      "lastName": "Escamilla",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "aescamil@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//32/95/Box_ff118473_65-69_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Sr. Budget Analyst"
+    },
+    {
+      "id": "KUAB3J2L",
+      "firstName": "Andrea",
+      "lastName": "Beechko",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "abeechko@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//AC/69/oxHl79nvUL18.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADKXF4",
+      "firstName": "Andrew",
+      "lastName": "German",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "agerman@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//11/62/Box_ff49b2a6_65-71_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Program Specialist"
+    },
+    {
+      "id": "KUABVT3K",
+      "firstName": "Andy",
+      "lastName": "Gildore",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "agildore@csusb.edu",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_11.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB4L3B",
+      "firstName": "Angela",
+      "lastName": "Gillespie",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR"
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/deleted.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": true
+    },
+    {
+      "id": "KUAB3J5T",
+      "firstName": "Anthony",
+      "lastName": "De La Loza",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "adelaloz@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_4.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACDBXE",
+      "firstName": "Ariel",
+      "lastName": "Dolen",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "004846851@coyote.csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADK3SH",
+      "firstName": "Avelina",
+      "lastName": "Saavedra",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "asaavedr@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//E5/66/Box_ff16a7bc_65-83_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Contracts Administrator"
+    },
+    {
+      "id": "KUABWMH6",
+      "firstName": "Benjamin",
+      "lastName": "Derry",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "bderry@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//41/BD/d0oHWb0UvWsD.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Operating System Analyst",
+      "companyName": "Cal-State University, San Bernardino",
+      "phone": "(909) 537-3758",
+      "location": "PL-022"
+    },
+    {
+      "id": "KUABXFKE",
+      "firstName": "Bill",
+      "lastName": "Herbert",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "wherbert@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_5.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB4L3G",
+      "firstName": "Bob",
+      "lastName": "Tenczar",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR"
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/deleted.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": true
+    },
+    {
+      "id": "KUAB4LXO",
+      "firstName": "Brandon",
+      "lastName": "Aragon",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "brandon.aragon@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_16.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADOFRK",
+      "firstName": "Brandon",
+      "lastName": "Sierra",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "bsierra@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//8A/1A/Box_ffe0686b_66-83_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "ITC"
+    },
+    {
+      "id": "KX76LGAC",
+      "firstName": "CAL",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//93/12/Circle_ffa88bd3_67-65_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": []
+    },
+    {
+      "id": "KUACFKB7",
+      "firstName": "CARY",
+      "lastName": "TYLER ",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "ctyler@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_3.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX76LGAM",
+      "firstName": "CBPA",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//66/A0/Circle_ffd3ae8b_67-66_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABXFKE",
+        "KUABXFKL",
+        "KUABXG5B"
+      ]
+    },
+    {
+      "id": "KX75WO7J",
+      "firstName": "CEL",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//78/16/Circle_ff5285b8_67-69_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": []
+    },
+    {
+      "id": "KX76LAQR",
+      "firstName": "CNS",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F9/04/Circle_ff8aaf61_67-78_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABXFN2"
+      ]
+    },
+    {
+      "id": "KX76LFYP",
+      "firstName": "COE",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//D1/5A/Circle_ff8bc9bc_67-79_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABYEXU",
+        "KUABNP2C"
+      ]
+    },
+    {
+      "id": "KX77RXHN",
+      "firstName": "CSBS",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//47/15/Circle_ff8bc9bc_67-83_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABXG3Q",
+        "KUABNQIN",
+        "KUABNQNG",
+        "KUACXBJZ",
+        "KUABZJZS"
+      ]
+    },
+    {
+      "id": "KUACXBJZ",
+      "firstName": "CSBSTech",
+      "lastName": "Account",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "csbstech@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//71/C8/Box_ffe0686b_67-65_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Connection Manager"
+    },
+    {
+      "id": "KUABZJZS",
+      "firstName": "CSBSTech",
+      "lastName": "Assistants",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "csbstechassistants@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//44/48/OxY3MJmZIJVt.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB24QH",
+      "firstName": "Candace",
+      "lastName": "Johnson",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "candace@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_19.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABWNZ3",
+      "firstName": "Chad",
+      "lastName": "Cordero",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "ccordero@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_2.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABR7ND",
+      "firstName": "Christine",
+      "lastName": "Fundell",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "cfundell@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB2BSK",
+      "firstName": "Cierra",
+      "lastName": "Lavarias",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "lavariac@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//DD/94/6w57xgEhEqBw.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Administrative Support Coordinator",
+      "companyName": "California State University, San Bernardino",
+      "phone": "9095373673",
+      "location": "San Bernardino"
+    },
+    {
+      "id": "KX76APDB",
+      "firstName": "College of Education",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//A4/6A/Circle_ff8aaf61_67-79_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACIHSW",
+        "KUACIHTQ",
+        "KUACIHYK"
+      ]
+    },
+    {
+      "id": "KX75KDSW",
+      "firstName": "Contracts",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//13/F7/Circle_ff5285b8_67-79_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACQRHF",
+        "KUABNOMI"
+      ]
+    },
+    {
+      "id": "KUAB5QNT",
+      "firstName": "Cynthia",
+      "lastName": "Perez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "cynthia.perez@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//D1/EB/At7V4h7HUXbh.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX76KCHF",
+      "firstName": "DDTS",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//FD/3C/Circle_ffe97272_68-68_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACMWUH",
+        "KUABNP2C",
+        "KUAB3BOJ",
+        "KUABNOLM"
+      ]
+    },
+    {
+      "id": "KUAB3YQT",
+      "firstName": "Darin",
+      "lastName": "Pain",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dpain@csusb.edu",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_7.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACQRHF",
+      "firstName": "David",
+      "lastName": "Gee",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "david.gee@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": true,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//4B/DE/vC5OYUc906NA.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Director",
+      "companyName": "CSUSB",
+      "phone": "+1 9095377195",
+      "location": ""
+    },
+    {
+      "id": "KUAB3W2Q",
+      "firstName": "David",
+      "lastName": "Hatch",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dhatch@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//4E/51/1nJ7UiSVoy3s.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABNP2C",
+      "firstName": "David",
+      "lastName": "Nimri",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dnimri@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//6B/20/MMiYAbCi8EWz.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB3WTR",
+      "firstName": "David",
+      "lastName": "Vasilia",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dvasilia@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F2/FB/PRwWcibJsQjo.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Network Administrator",
+      "companyName": "CSUSB",
+      "phone": "909-537-3528",
+      "location": "5500 University Parkway"
+    },
+    {
+      "id": "KUABWMH2",
+      "firstName": "Dee",
+      "lastName": "Bowen",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "deebowen@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_13.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACIHSW",
+      "firstName": "Diana",
+      "lastName": "Quijano",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dianaq@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_10.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABWVMW",
+      "firstName": "Diane",
+      "lastName": "Podolske",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dpodolsk@csusb.edu",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_17.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB3L4Z",
+      "firstName": "Doris",
+      "lastName": "Selva",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dselva@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_15.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACGNZX",
+      "firstName": "Dung",
+      "lastName": "Vu",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dvu@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//4D/1C/Box_fff9be28_68-86_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "phone": "+1 7147243724"
+    },
+    {
+      "id": "KUABNQIN",
+      "firstName": "Dustin",
+      "lastName": "Gray",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dgray@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//D7/D2/FyBRxXaMuY95.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX77SKLX",
+      "firstName": "ECS-TSC",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//9C/76/Circle_ff8bc9bc_69-65_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABWMHW",
+        "KUABWMH6",
+        "KUABWMH2",
+        "KUABWMIA",
+        "KUABWMIE",
+        "KUABWMKT",
+        "KUAB24QH",
+        "KUABUZ2V",
+        "KUABWNZ3",
+        "KUABNQNG",
+        "KUABNQVE",
+        "KUABNOJF",
+        "KUABNSLV",
+        "KUABNP2C",
+        "KUABMKIC",
+        "KUABNQIN",
+        "KUABNUJS",
+        "KUABNOTR",
+        "KUABNOMA",
+        "KUABNOLM",
+        "KUABNOMI",
+        "KUABU7VO",
+        "KUABY2IF",
+        "KUABWKQI",
+        "KUABZ7DO",
+        "KUAB4YQG",
+        "KUABZ7LC",
+        "KUACGNZX",
+        "KUADJD65",
+        "KUADIVSL"
+      ]
+    },
+    {
+      "id": "KUABVU33",
+      "firstName": "ELIZABETH",
+      "lastName": "VIRAMONTES",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "eviramon@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//DD/78/GYMol79W1WzK.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACFKC5",
+      "firstName": "Earl",
+      "lastName": "Wilson",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "ewilson@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_19.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADL2XQ",
+      "firstName": "Eduardo",
+      "lastName": "Ramirez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "eduardo.ramirez@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//9C/F6/Box_ffdf2a2e_69-82_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Administrative Analyst",
+      "companyName": "California State University, San Bernardino",
+      "phone": "",
+      "location": ""
+    },
+    {
+      "id": "KUABYXDN",
+      "firstName": "Edward",
+      "lastName": "Szumski",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "eszumski@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_11.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB4L3C",
+      "firstName": "Elizabeth",
+      "lastName": "Ferreira ",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR"
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/deleted.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": true
+    },
+    {
+      "id": "KUABWGU3",
+      "firstName": "Elsa",
+      "lastName": "Lopez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "elsa.lopez@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_12.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABNQNG",
+      "firstName": "Esmi",
+      "lastName": "Nolasco",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "enolasco@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//9E/1E/w7lQwK9Pe11u.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "",
+      "companyName": "",
+      "location": ""
+    },
+    {
+      "id": "KUABMKIC",
+      "firstName": "Felix",
+      "lastName": "Zuniga",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "fzuniga@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": true,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//41/93/T47wPNV0GGtv.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Director of Project Management and Assessment",
+      "companyName": "CSUSB",
+      "phone": "+1 9095375095",
+      "location": ""
+    },
+    {
+      "id": "KUABNOE5",
+      "firstName": "Felix Test",
+      "lastName": "Account",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "felixzuniga@gmail.com",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_10.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABWKQI",
+      "firstName": "Gabby",
+      "lastName": "Guzman",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "gguzman@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_7.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABO5GD",
+      "firstName": "Garrett",
+      "lastName": "Trask",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "gtrask@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//E5/8B/krjWENl6q6yM.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABZ7DO",
+      "firstName": "Gene",
+      "lastName": "Young",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "gey@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_10.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABNUJS",
+      "firstName": "Gerard",
+      "lastName": "Au",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "gau@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//5A/A3/LCHay9Sk2dr8.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Associate Vice President, IT Services",
+      "companyName": "CSUSB",
+      "phone": "909-537-5100",
+      "location": "San Bernardino, CA"
+    },
+    {
+      "id": "KUABNOTR",
+      "firstName": "Gerardo",
+      "lastName": "Garcia",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "gsotelo@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_16.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACFKGL",
+      "firstName": "Gilbert",
+      "lastName": "Trevino",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "gtrevino@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_10.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACNKVY",
+      "firstName": "Ginny",
+      "lastName": "Stewart-Hattar",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "stewart@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//49/0C/Box_ff1e7ee2_71-83_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACCATH",
+      "firstName": "Grace",
+      "lastName": "King",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "gking@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_9.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADK3ZT",
+      "firstName": "Grace",
+      "lastName": "Wichert",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "gwichert@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//53/6C/Box_ff1e7ee2_71-87_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Buyer"
+    },
+    {
+      "id": "KUAB3WXL",
+      "firstName": "Heather",
+      "lastName": "Hopkins",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "hhopkins@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//9D/6E/FIvD93OzPjiN.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Operations Specialist",
+      "companyName": "Cal State University, San Bernardino",
+      "location": ""
+    },
+    {
+      "id": "KUABWMIE",
+      "firstName": "Hong",
+      "lastName": "Cullen",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "hcullen@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_9.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX77SKLW",
+      "firstName": "ISET",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//90/CE/Circle_ffe97272_73-83_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACAXDX",
+        "KUACDUFT",
+        "KUABWW55",
+        "KUAB7WCQ",
+        "KUABSMOY",
+        "KUABTD5P",
+        "KUABWGU3",
+        "KUABYXDN",
+        "KUABYXBM",
+        "KUACGESZ"
+      ]
+    },
+    {
+      "id": "KX76OO3Z",
+      "firstName": "IT Governance",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//04/51/Circle_ff5285b8_73-71_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABR7NF",
+        "KUABMKIC",
+        "KUABNUJS",
+        "KUABR7PL",
+        "KUABVILO"
+      ]
+    },
+    {
+      "id": "KX77SKLY",
+      "firstName": "ITS ALL",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//59/CE/Circle_ff5285b8_73-65_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABMKIC",
+        "KUABNUJS",
+        "KUABWUQK",
+        "KUADBL4Q"
+      ]
+    },
+    {
+      "id": "KX76OO3W",
+      "firstName": "ITS Advertising",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//C1/A1/Circle_ff8aaf61_73-65_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": []
+    },
+    {
+      "id": "KX76LYWA",
+      "firstName": "ITS Budget",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//B1/DB/Circle_ffe97272_73-66_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUAB24QH",
+        "KUABZ6MI",
+        "KUABVILO",
+        "KUABWGU3",
+        "KUABR7NF",
+        "KUABWKQI",
+        "KUAB7WCQ"
+      ]
+    },
+    {
+      "id": "KX77SKJ6",
+      "firstName": "ITS Leaders",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//86/3E/Circle_ffa88bd3_73-76_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABNSLV",
+        "KUABNQVE",
+        "KUABMKIC",
+        "KUABNOLM",
+        "KUABR7PL",
+        "KUABNUJS",
+        "KUABOKRA",
+        "KUABWUQK",
+        "KUABVILO",
+        "KUABSMOY",
+        "KUABUZ2V",
+        "KUABNP2C",
+        "KUABR7MM",
+        "KUAB7WCQ"
+      ]
+    },
+    {
+      "id": "KX76IDXN",
+      "firstName": "ITS Marketing",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//B2/69/Circle_ffd3ae8b_73-77_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABNP2C",
+        "KUABMKIC",
+        "KUABVILO",
+        "KUAB4LTO",
+        "KUABNUJS"
+      ]
+    },
+    {
+      "id": "KX76MXAV",
+      "firstName": "ITS Purchasing",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//FE/58/Circle_ffa88bd3_73-80_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": []
+    },
+    {
+      "id": "KUABXG5B",
+      "firstName": "Ian",
+      "lastName": "Jacobs",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "ijacobs@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB3JLY",
+      "firstName": "Idalia",
+      "lastName": "Mendez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR"
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/deleted.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": true
+    },
+    {
+      "id": "KUAB6JRJ",
+      "firstName": "Institutional",
+      "lastName": "Research",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "institutional_research@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_13.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX76ID2G",
+      "firstName": "Institutional Research",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//06/EC/Circle_ff8aaf61_73-82_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUAB6JRJ",
+        "KUAB3W35",
+        "KUAB4TZA",
+        "KUAB4LXO",
+        "KUAB4LRI"
+      ]
+    },
+    {
+      "id": "KUAB4LTO",
+      "firstName": "Jacob",
+      "lastName": "Poore",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jpoore@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//3C/0D/nuyvCePJ0Lc5.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Program Manager",
+      "companyName": "CSUSB Coyote Advertising",
+      "phone": "909-537-3448",
+      "location": "San Bernardino, CA"
+    },
+    {
+      "id": "KUACMOS2",
+      "firstName": "Jacqueline",
+      "lastName": "Kuenz",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jacqueline.kuenz@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//DF/8F/Box_ff7cc67d_74-75_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABWMIA",
+      "firstName": "Jaime",
+      "lastName": "Hernandez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "hernandezj@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_10.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABZ7LC",
+      "firstName": "James",
+      "lastName": "Henriques",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jhenriqu@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_10.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABYXBM",
+      "firstName": "James",
+      "lastName": "Macdonell",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jmacdone@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//EA/E4/cJg54A9QclS2.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACRI3A",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "dmgee909@gmail.com",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//1E/8E/Box_ffb358c4_74-68_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADKQ42",
+      "firstName": "Jane",
+      "lastName": "E. Payne",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR"
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/deleted.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": true
+    },
+    {
+      "id": "KUABR7NF",
+      "firstName": "Janette",
+      "lastName": "Flores",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jflores@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": true,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//E2/CE/OJ4sW57bnHFU.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "",
+      "companyName": "California State University San Bernardino",
+      "phone": "909-537-3089",
+      "location": "5500 University Pkwy, San Bernardino CA 92407"
+    },
+    {
+      "id": "KUABSMOY",
+      "firstName": "Javier",
+      "lastName": "Torner",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jtorner@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_8.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADLHD6",
+      "firstName": "Jeff",
+      "lastName": "Whitman",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "whitman@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//E9/06/Box_ff5eaef5_74-87_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "ITC"
+    },
+    {
+      "id": "KUADON5L",
+      "firstName": "Jenesie",
+      "lastName": "Hardyman",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jenesie.hardyman@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//01/0E/Box_fffd9209_74-72_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "AAS"
+    },
+    {
+      "id": "KUACNNI3",
+      "firstName": "Jennifer",
+      "lastName": "Perez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "perej363@coyote.csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//AE/C6/Box_ff8502a4_74-80_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABWMHW",
+      "firstName": "Jennifer",
+      "lastName": "Poron",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jporon@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_11.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB726F",
+      "firstName": "Jenny",
+      "lastName": "Casillas",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "000012739@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//D1/60/Box_ffec538c_74-67_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "phone": "+1 9095375080"
+    },
+    {
+      "id": "KUAB7227",
+      "firstName": "Jenny",
+      "lastName": "Casillas",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR"
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/deleted.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": true
+    },
+    {
+      "id": "KUABNOLM",
+      "firstName": "Jim",
+      "lastName": "Olinger",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jolinger@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": true,
+          "owner": true
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//34/59/S8jlLUqKgeQg.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Director of Technology Support Center",
+      "companyName": "California State University, San Bernardino",
+      "phone": "909-537-5470",
+      "location": "San Bernardino, CA  92407"
+    },
+    {
+      "id": "KUACQZ6L",
+      "firstName": "Joe",
+      "lastName": "Buyer",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "david.gee@roadrunner.com",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//CE/7B/Box_ff323ba5_74-66_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABW4QI",
+      "firstName": "Joe",
+      "lastName": "Estes",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "joeestes@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F6/E8/ukD7jQNigqGB.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB4L3E",
+      "firstName": "Joe",
+      "lastName": "Gutierrez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR"
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/deleted.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": true
+    },
+    {
+      "id": "KUACG6WM",
+      "firstName": "Joel",
+      "lastName": "Fite",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jfite@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_9.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABQQR4",
+      "firstName": "Joeleen",
+      "lastName": "Monclova",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "joeleen@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//94/1F/WgHPdEpJvTxI.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACAGFJ",
+      "firstName": "John",
+      "lastName": "Baumann",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jbaumann@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_7.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB3EHG",
+      "firstName": "John",
+      "lastName": "Harrell",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "john.harrell@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_0.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Information Technology Consultant",
+      "companyName": "PDC",
+      "phone": "760-272-0847",
+      "location": "Palm Desert"
+    },
+    {
+      "id": "KUADK3IL",
+      "firstName": "Jolynne",
+      "lastName": "Morgan",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jolynne.morgan@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F3/12/Box_fff7a420_74-77_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Administrative Support Assistant"
+    },
+    {
+      "id": "KUABVLMZ",
+      "firstName": "Jonathan",
+      "lastName": "Brooks",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "brooks@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_8.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "phone": "+1 9095373677"
+    },
+    {
+      "id": "KUADJD65",
+      "firstName": "Jonathan",
+      "lastName": "Hamblen",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "jhamblen@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//CC/5B/Box_ff717cc6_74-72_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Information Technology Consultant"
+    },
+    {
+      "id": "KUACDBK3",
+      "firstName": "Jose",
+      "lastName": "Rodriguez",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "004724095@coyote.csusb.edu",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_18.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABVILO",
+      "firstName": "Karina",
+      "lastName": "Alvarado",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "alvarado@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_15.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABVILM",
+      "firstName": "Karina",
+      "lastName": "Alvarado",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR"
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/deleted.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": true
+    },
+    {
+      "id": "KUABWZ74",
+      "firstName": "Katie",
+      "lastName": "Godfrey",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "katie.m.godfrey@gmail.com",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//CE/09/NGQRQFkpzwTO.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "",
+      "companyName": "",
+      "phone": "73694",
+      "location": ""
+    },
+    {
+      "id": "KUABUZ2V",
+      "firstName": "Khalil",
+      "lastName": "Daneshvar",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "kdaneshv@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//50/89/SkzXFN0n5oDQ.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACDFLN",
+      "firstName": "Kim",
+      "lastName": "Costino",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "kcostino@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_13.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACNRL4",
+      "firstName": "Kim",
+      "lastName": "Nicholl",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "knicholl@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//C4/77/Box_ff4bcede_75-78_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACAXDX",
+      "firstName": "Laura",
+      "lastName": "Carrizales",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "lcarriza@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_14.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "phone": "+1 9095377262"
+    },
+    {
+      "id": "KX75JYRE",
+      "firstName": "Learning Sites - ISPP Dietetics",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//7B/74/Circle_ffe97272_76-83_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUADKXF4",
+        "KUACQRHF"
+      ]
+    },
+    {
+      "id": "KX75JYRF",
+      "firstName": "Learning Sites - Nursing",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//B6/C5/Circle_ff5285b8_76-83_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACQRHF"
+      ]
+    },
+    {
+      "id": "KX75JYRG",
+      "firstName": "Learning Sites - Social Work",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F0/BF/Circle_ff8aaf61_76-83_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACRI3A",
+        "KUACQRHF",
+        "KUADK3IL"
+      ]
+    },
+    {
+      "id": "KUABWUQK",
+      "firstName": "Lenora",
+      "lastName": "Rodgers",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "lenora@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//B3/49/3b8wCoIsgMTy.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABRWYI",
+      "firstName": "Leon",
+      "lastName": "McNaught",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mcnaught@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//06/33/5JkACuzjz48Z.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Coordinator",
+      "companyName": "Assistive Technology & Accessibility Center",
+      "phone": "909-537-3474",
+      "location": "PL-1109D"
+    },
+    {
+      "id": "KUAB7YJC",
+      "firstName": "Linh",
+      "lastName": "Tran",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "tranl@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_2.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB3WV5",
+      "firstName": "Lonelle",
+      "lastName": "Minesinger",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "lminesin@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_18.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB7YI6",
+      "firstName": "Luisa",
+      "lastName": "Hawkins",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "hawkins@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//3E/A1/YPCWivOlBIKM.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Qualtrics Brand Administrator & Class Climate Administrator",
+      "companyName": "CSUSB",
+      "location": ""
+    },
+    {
+      "id": "KUAB3WVY",
+      "firstName": "Marie",
+      "lastName": "Thomson",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mthomson@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_13.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUADKRDZ",
+      "firstName": "Marie",
+      "lastName": "Torres",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "marie.torres@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//40/F4/Box_ffd20058_77-84_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Buyer"
+    },
+    {
+      "id": "KUABWVFJ",
+      "firstName": "Marissa",
+      "lastName": "Setyawan",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "msetyawa@csusb.edu",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//43/91/2wkhiCHhcvSS.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACIHYK",
+      "firstName": "Marita",
+      "lastName": "Mahoney",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mmahoney@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//EE/FE/rU7BIynSCZV1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Director, COE Office of Assessment & Research",
+      "companyName": "California State University, San Bernardino",
+      "location": "San Bernardino, CA"
+    },
+    {
+      "id": "KUAB3WTM",
+      "firstName": "Martin",
+      "lastName": "Garcia",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mgarcia@csusb.edu",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_14.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABNOJF",
+      "firstName": "Matias",
+      "lastName": "Farre",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "farrem@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_2.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABQCLG",
+      "firstName": "Mauricio",
+      "lastName": "Cadavid",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mcadavid@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//97/27/5b8PfVpx2loP.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Instructional Designer",
+      "companyName": "CSU San Bernardino",
+      "phone": "909-537-3690",
+      "location": "5500 University Parkway"
+    },
+    {
+      "id": "KUABR6UD",
+      "firstName": "Micah",
+      "lastName": "Schiessel",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "micah.schiessel@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//CC/1E/XUmKx5XY71JU.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABNSLV",
+      "firstName": "Michael",
+      "lastName": "Casadonte",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mcasadon@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//B2/0E/lzS8e4EMLaCv.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Web Services Coordinator",
+      "companyName": "CSUSB",
+      "location": ""
+    },
+    {
+      "id": "KUABOKRA",
+      "firstName": "Michael",
+      "lastName": "Chen",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mchensa@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//66/B3/bfzAYHiCFV4q.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACGESZ",
+      "firstName": "Michelle",
+      "lastName": "Behne",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mbehne@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//15/8E/jrQWdfTb6uri.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Administrative Analyst Specialist",
+      "companyName": "CSU San Bernardino",
+      "phone": "909-537-7766",
+      "location": "San Bernardino"
+    },
+    {
+      "id": "KUACIHTQ",
+      "firstName": "Mick",
+      "lastName": "Verdi",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mverdi@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_11.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABO5MQ",
+      "firstName": "Mihaela",
+      "lastName": "Popescu",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "popescum@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//E0/B3/fqyakgpzz1Es.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACNKTN",
+      "firstName": "Mike",
+      "lastName": "Arteaga",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "marteaga@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//18/A1/Box_ffb358c4_77-65_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB3BOJ",
+      "firstName": "Mike",
+      "lastName": "Fredette",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mfredette@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//CB/C8/o0JxRZr9AaiF.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACMKPO",
+      "firstName": "Monir",
+      "lastName": "Ahmed",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mahmed@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//08/BB/Box_ffdf2a2e_77-65_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB3W35",
+      "firstName": "Muriel",
+      "lastName": "Lopez-Wagner",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "muriel.lopez-wagner@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//9A/AE/5Ox4gdYdLqOk.png",
+      "timezone": "America/Tijuana",
+      "locale": "en",
+      "deleted": false,
+      "title": "",
+      "companyName": "",
+      "location": ""
+    },
+    {
+      "id": "KUAB3JK7",
+      "firstName": "Muriel",
+      "lastName": "Vita",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mvita@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_16.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX77SNXM",
+      "firstName": "My Team",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/internal_users_group.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUADKWJW",
+        "KUACAXDX",
+        "KUABNSLV",
+        "KUAB7YI6",
+        "KUACDUFT",
+        "KUABWW55",
+        "KUABNOTR",
+        "KUAB6JRJ",
+        "KUABR7PL",
+        "KUABUZ2V",
+        "KUAB3Q3Q",
+        "KUADK3RL",
+        "KUADBL4Q",
+        "KUADK3SH",
+        "KUADK3ZT",
+        "KUACFRDE",
+        "KUABMKIC",
+        "KUAB5QNT",
+        "KUABQCLG",
+        "KUABNUJS",
+        "KUABNOLM",
+        "KUABO5GD",
+        "KUAB3W2Q",
+        "KUABO5MQ",
+        "KUABWUQK",
+        "KUABSMOY",
+        "KUABR7MM",
+        "KUABU7VO",
+        "KUABRWYI",
+        "KUABVILO",
+        "KUABXG3Q",
+        "KUABVNRT",
+        "KUABR7NF",
+        "KUABTD5P",
+        "KUABVU33",
+        "KUABR6UD",
+        "KUABSNGJ",
+        "KUABYXBM",
+        "KUACDFLN",
+        "KUABNQNG",
+        "KUABYXDN",
+        "KUABYCOL",
+        "KUABNQIN",
+        "KUABWZ74",
+        "KUABZ6MI",
+        "KUABR7ND",
+        "KUAB3MAU",
+        "KUAB4LRI",
+        "KUAB3EHG",
+        "KUAB3L4Z",
+        "KUACQRHF",
+        "KUABW4QI",
+        "KUADLHD6",
+        "KUACCATH",
+        "KUABOKRA",
+        "KUADKQ6V",
+        "KUADKRDZ",
+        "KUADKRGK",
+        "KUACGESZ",
+        "KUABWMKT",
+        "KUABWMIE",
+        "KUABQQR4",
+        "KUACMWUH",
+        "KUADJD65",
+        "KUADL2XQ",
+        "KUADLOSY",
+        "KUABVLMZ",
+        "KUABQNBF",
+        "KUADOFRK"
+      ],
+      "myTeam": true
+    },
+    {
+      "id": "KUADKWJW",
+      "firstName": "Myra",
+      "lastName": "Vigil",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "mvigil@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//8C/0B/Box_ffaab125_77-86_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Buyer"
+    },
+    {
+      "id": "KX76LFYL",
+      "firstName": "OCE",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//26/7E/Circle_ff8bc9bc_79-67_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABWVFJ",
+        "KUABWVMW"
+      ]
+    },
+    {
+      "id": "KX76MXA6",
+      "firstName": "PDC",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//A0/CB/Circle_ff8bc9bc_80-68_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACFKB7",
+        "KUACFKC5",
+        "KUACFKGL",
+        "KUABR7MM",
+        "KUAB3EHG"
+      ]
+    },
+    {
+      "id": "KX77SKLU",
+      "firstName": "PMO",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//5D/86/Circle_ffd3ae8b_80-77_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABR7NF",
+        "KUABMKIC",
+        "KUACNNI3"
+      ]
+    },
+    {
+      "id": "KUADLOSY",
+      "firstName": "Pamela",
+      "lastName": "Briguglio",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "briggs@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F2/2E/Box_ffec538c_80-66_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Admin Support Coordinator"
+    },
+    {
+      "id": "KUACFRDE",
+      "firstName": "Patrick",
+      "lastName": "Bungard",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "pbungard@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_11.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABR7MM",
+      "firstName": "Patty",
+      "lastName": "Weyand",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "pweyand@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_18.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACMWUH",
+      "firstName": "Peter",
+      "lastName": "Nguyen",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "peter.nguyen@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//01/3A/YqwzE3bSjyXt.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX75KSJ4",
+      "firstName": "Procurement and Contracts (Purchasing)",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//02/A5/Circle_ffe97272_80-65_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUADKWJW",
+        "KUADK3SH",
+        "KUADK3RL",
+        "KUADK3ZT",
+        "KUACQRHF",
+        "KUADKQ6V",
+        "KUACUI4Z",
+        "KUADKRDZ",
+        "KUAC7PKS",
+        "KUADKRGK",
+        "KUADLOSY"
+      ]
+    },
+    {
+      "id": "KX76ESSK",
+      "firstName": "Q2S",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F9/39/Circle_ffd3ae8b_81-50_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACFRDE",
+        "KUACDFLN",
+        "KUACCATH"
+      ]
+    },
+    {
+      "id": "KUADIVSL",
+      "firstName": "Randy",
+      "lastName": "R. Rouch",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "rrouch@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//C3/B4/Box_ff3f9d3f_82-82_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Information Technology Consultant"
+    },
+    {
+      "id": "KUABYCOL",
+      "firstName": "Rich",
+      "lastName": "McGee",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "rmcgee@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_18.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB3Q3Q",
+      "firstName": "Rick",
+      "lastName": "Conway",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "rconway@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//F7/FD/Box_ffbbca2d_82-67_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB7WCQ",
+      "firstName": "Rina",
+      "lastName": "Nolasco",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "rnolasco@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//85/85/ePDB249o413i.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABXFKL",
+      "firstName": "Rob",
+      "lastName": "LeBaron",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "rlebaron@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_19.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABU7VO",
+      "firstName": "Roger",
+      "lastName": "Robles",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "rrobles@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_3.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABTD5P",
+      "firstName": "Rosa",
+      "lastName": "Padilla",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "rosap@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//E9/74/8CwECJutjwyb.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACDUFT",
+      "firstName": "Russell",
+      "lastName": "Jackson",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "russell.jackson@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//6B/FA/uMSXqgNo4tdA.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Operating Systems Analyst",
+      "companyName": "CSU San Bernardino",
+      "location": ""
+    },
+    {
+      "id": "KX75WO7M",
+      "firstName": "SEGS",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//BA/0E/Circle_ffa88bd3_83-69_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACNKTN",
+        "KUACNKVY"
+      ]
+    },
+    {
+      "id": "KUABR7PL",
+      "firstName": "Samuel",
+      "lastName": "Sudhakar",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "ssudhakar@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_10.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACCN52",
+      "firstName": "Savanah",
+      "lastName": "Donahoe ",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "004914087@coyote.csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_10.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABWMKT",
+      "firstName": "Shaun",
+      "lastName": "Geer",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "sgeer@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_9.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACZ22A",
+      "firstName": "Sonia",
+      "lastName": "Miranda",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "smiranda@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//1E/10/Box_fffd9209_83-77_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Administrative Support Coordinator"
+    },
+    {
+      "id": "KUABY2IF",
+      "firstName": "Steve",
+      "lastName": "Cuddigan",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "scuddiga@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_5.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABNQVE",
+      "firstName": "Steven",
+      "lastName": "Waldman",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "swaldman@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX76IJZP",
+      "firstName": "Strategic Communications",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//1B/67/Circle_ffe97272_83-67_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": []
+    },
+    {
+      "id": "KX76IQEV",
+      "firstName": "Strategic Planning",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//81/2C/Circle_ffe97272_83-80_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABR7PL",
+        "KUABVILO",
+        "KUAB3W35",
+        "KUADBL4Q"
+      ]
+    },
+    {
+      "id": "KX76ESUN",
+      "firstName": "Student Collaborators",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//B0/07/Circle_ff5285b8_83-67_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUACCN52",
+        "KUACDBK3",
+        "KUACDBXE",
+        "KUACBURR"
+      ]
+    },
+    {
+      "id": "KUABWW55",
+      "firstName": "Sunny",
+      "lastName": "Lin",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "slin@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_4.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX77SKLP",
+      "firstName": "TAG",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//B2/14/Circle_ffa88bd3_84-65_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUABMKIC",
+        "KUABNUJS"
+      ]
+    },
+    {
+      "id": "KX77SKLQ",
+      "firstName": "TNS",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//42/CD/Circle_ff8bc9bc_84-78_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUAB3Q3Q",
+        "KUABNUJS",
+        "KUAB3WVY",
+        "KUAB3WTM",
+        "KUAB3WTR",
+        "KUAB3WXL",
+        "KUAB3WV5",
+        "KUAB3W2Q",
+        "KUAB3YQT"
+      ]
+    },
+    {
+      "id": "KUABXFN2",
+      "firstName": "Takenori",
+      "lastName": "Tsuruga",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "ttsuruga@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//33/81/Box_ff5eaef5_84-84_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "ITC",
+      "companyName": "CSUSB",
+      "phone": "(909) 537-5422",
+      "location": "JB351"
+    },
+    {
+      "id": "KUABSNGJ",
+      "firstName": "Takiya",
+      "lastName": "Moore",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "tmoore@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_14.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAB4LRI",
+      "firstName": "Tanner",
+      "lastName": "Carollo",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "tcarollo@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_7.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABYEXU",
+      "firstName": "Thinh",
+      "lastName": "Ly",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "tly@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_14.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABQNBF",
+      "firstName": "Thomas",
+      "lastName": "Richards",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "richards@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_2.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "phone": "+1 9095375061"
+    },
+    {
+      "id": "KUADK3RL",
+      "firstName": "Tiffany",
+      "lastName": "Talley",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "ttalley@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//2C/7C/Box_ff49b2a6_84-84_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Buyer"
+    },
+    {
+      "id": "KUABVNRT",
+      "firstName": "Tracy",
+      "lastName": "Medrano",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "tracy.medrano@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/default/default_17.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUABXG3Q",
+      "firstName": "Vincent",
+      "lastName": "Cornejo",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "vcornejo@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//0F/71/pE4iwCDsfByS.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KX76FPT4",
+      "firstName": "Web Development",
+      "lastName": "",
+      "type": "Group",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//D8/F0/Circle_ffd3ae8b_87-68_v1.png",
+      "timezone": "Z",
+      "locale": "en",
+      "deleted": false,
+      "memberIds": [
+        "KUADBL4Q",
+        "KUACG6WM",
+        "KUACAGFJ",
+        "KUAB7WG5"
+      ]
+    },
+    {
+      "id": "KUAB3MAU",
+      "firstName": "William",
+      "lastName": "Yates",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "wyates@csusb.edu",
+          "role": "User",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//D6/79/NymIM6twlUZI.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false,
+      "title": "Analyst/Programmer",
+      "companyName": "CSU San Bernardino",
+      "location": "ACBI"
+    },
+    {
+      "id": "KUACUI4Z",
+      "firstName": "Wrike",
+      "lastName": "Bot",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "robot1354325forms@wrike-robot.com",
+          "role": "Collaborator",
+          "external": false,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/formsbot.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUAC7PKS",
+      "firstName": "Wrike",
+      "lastName": "Bot",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "robot693329reminder@wrike-robot.com",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars/reminderbot.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    },
+    {
+      "id": "KUACZ27C",
+      "firstName": "korina",
+      "lastName": "uribe",
+      "type": "Person",
+      "profiles": [
+        {
+          "accountId": "IEAAVFCR",
+          "email": "korina.uribe@csusb.edu",
+          "role": "Collaborator",
+          "external": true,
+          "admin": false,
+          "owner": false
+        }
+      ],
+      "avatarUrl": "https://www.wrike.com/avatars//AF/4C/Box_fff7a420_75-85_v1.png",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "deleted": false
+    }
+  ]
+}

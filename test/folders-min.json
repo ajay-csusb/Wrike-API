@@ -1,0 +1,221 @@
+{
+  "kind": "folderTree",
+  "data": [
+    {
+      "id": "IEAAVFCRI7777777",
+      "title": "Root",
+      "childIds": [
+        "IEAAVFCRI4CWDEWT",
+        "IEAAVFCRI4CBPR5A",
+        "IEAAVFCRI4CNTATB",
+        "IEAAVFCRI4CU6TUU"
+      ],
+      "scope": "WsRoot"
+    },
+    {
+      "id": "IEAAVFCRI7777776",
+      "title": "Recycle Bin",
+      "childIds": [
+        "IEAAVFCRI4CYLQPE",
+        "IEAAVFCRI4B6RC6O",
+        "IEAAVFCRI4FFX7Q5",
+        "IEAAVFCRI4CLJU7S",
+        "IEAAVFCRI4D6TVWD",
+        "IEAAVFCRI4CWVAHB",
+        "IEAAVFCRI4EPEETZ",
+        "IEAAVFCRI4CLJQL7",
+        "IEAAVFCRI4EA6JJD",
+        "IEAAVFCRI4C4FIXN",
+        "IEAAVFCRI4DL3FCS",
+        "IEAAVFCRI4CAKGNX",
+        "IEAAVFCRI4D7TBGN",
+        "IEAAVFCRI4EA6J42",
+        "IEAAVFCRI4EA6JJY",
+        "IEAAVFCRI4CNU7BA",
+        "IEAAVFCRI4CNXUAA",
+        "IEAAVFCRI4EBOLUI"
+      ],
+      "scope": "RbRoot"
+    },
+    {
+      "id": "IEAAVFCRI4CBPR5F",
+      "title": "2015-2016 Retreat",
+      "childIds": [],
+      "scope": "WsFolder"
+    },
+    {
+      "id": "IEAAVFCRI4CQBOSF",
+      "title": "2016 PDC Inventory Audit",
+      "childIds": [],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABR7MM",
+        "ownerIds": [
+          "KUABR7MM",
+          "KUACFKB7"
+        ],
+        "status": "Green",
+        "startDate": "2016-05-16",
+        "endDate": "2016-08-22",
+        "createdDate": "2016-03-14T20:52:49Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4FBKUYJ",
+      "title": "24-7 Study Area Improvements",
+      "childIds": [
+        "IEAAVFCRI4FF2SWX"
+      ],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABMKIC",
+        "ownerIds": [
+          "KUABMKIC",
+          "KUABNOLM",
+          "KUAB3Q3Q"
+        ],
+        "status": "Green",
+        "startDate": "2017-07-05",
+        "endDate": "2017-09-21",
+        "createdDate": "2017-08-07T21:39:43Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4CNU7BA",
+      "title": "Academic Affairs - Office of the Provost",
+      "childIds": [],
+      "scope": "RbFolder",
+      "project": {
+        "authorId": "KUABNSLV",
+        "ownerIds": [
+          "KUABNSLV"
+        ],
+        "status": "Completed",
+        "startDate": "2017-03-13",
+        "endDate": "2017-04-24",
+        "createdDate": "2016-02-24T23:21:49Z",
+        "completedDate": "2017-04-20T18:58:42Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4CNU2CZ",
+      "title": "Academic Personnel",
+      "childIds": [],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABNSLV",
+        "ownerIds": [
+          "KUABNSLV"
+        ],
+        "status": "Yellow",
+        "createdDate": "2016-02-24T22:47:36Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4CNU2C6",
+      "title": "Academic Programs",
+      "childIds": [],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABNSLV",
+        "ownerIds": [
+          "KUABNSLV"
+        ],
+        "status": "Completed",
+        "startDate": "2017-02-13",
+        "endDate": "2017-04-24",
+        "createdDate": "2016-02-24T22:47:45Z",
+        "completedDate": "2017-04-20T20:01:50Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4CNU2DM",
+      "title": "Academic Resources",
+      "childIds": [],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABNSLV",
+        "ownerIds": [
+          "KUABNSLV"
+        ],
+        "status": "Yellow",
+        "createdDate": "2016-02-24T22:47:56Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4CNU6RA",
+      "title": "Academic Scheduling",
+      "childIds": [],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABNSLV",
+        "ownerIds": [
+          "KUABNSLV"
+        ],
+        "status": "Completed",
+        "startDate": "2017-06-26",
+        "endDate": "2017-09-05",
+        "createdDate": "2016-02-24T23:18:11Z",
+        "completedDate": "2017-08-30T16:51:09Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4CQGJZW",
+      "title": "ACBI Personnel Development",
+      "childIds": [],
+      "scope": "WsFolder"
+    },
+    {
+      "id": "IEAAVFCRI4C447HY",
+      "title": "ACBI Training",
+      "childIds": [],
+      "scope": "WsFolder"
+    },
+    {
+      "id": "IEAAVFCRI4D6TWBP",
+      "title": "Accessible Technology Inititiative",
+      "childIds": [],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABNSLV",
+        "ownerIds": [
+          "KUABNSLV"
+        ],
+        "status": "Completed",
+        "createdDate": "2017-02-01T01:00:50Z",
+        "completedDate": "2017-02-01T01:01:54Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4CNAKCQ",
+      "title": "Accounting & Finance",
+      "childIds": [],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABNSLV",
+        "ownerIds": [
+          "KUABNSLV"
+        ],
+        "status": "Green",
+        "createdDate": "2016-02-19T14:55:34Z"
+      }
+    },
+    {
+      "id": "IEAAVFCRI4CNO43L",
+      "title": "Accounting Services",
+      "childIds": [],
+      "scope": "WsFolder",
+      "project": {
+        "authorId": "KUABNSLV",
+        "ownerIds": [
+          "KUABNSLV"
+        ],
+        "status": "Completed",
+        "startDate": "2016-11-14",
+        "endDate": "2017-01-23",
+        "createdDate": "2016-02-23T20:40:57Z",
+        "completedDate": "2017-01-23T23:41:29Z"
+      }
+    }
+  ]
+}
