@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "async": "^2.5.0",
+    "async": "^2.6.4",
     "body-parser": "^1.18.2",
     "client-oauth2": "^4.1.0",
     "dotenv": "^4.0.0",
